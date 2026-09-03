@@ -1,0 +1,421 @@
+{
+  "PL": {
+    "name": "Premier League",
+    "fixtures": [
+      {
+        "date": "2026-09-04T19:00:00Z",
+        "home": "Ipswich Town FC",
+        "away": "Liverpool FC",
+        "exp_home": 1.82,
+        "exp_away": 2.5,
+        "exp_total": 4.32,
+        "p_over25": 80.5,
+        "p_btts": 76.9,
+        "home_scored_l5": [
+          2
+        ],
+        "home_conceded_l5": [
+          1
+        ],
+        "away_scored_l5": [
+          2
+        ],
+        "away_conceded_l5": [
+          2
+        ]
+      },
+      {
+        "date": "2026-09-05T11:30:00Z",
+        "home": "Newcastle United FC",
+        "away": "AFC Bournemouth",
+        "exp_home": 1.82,
+        "exp_away": 2.5,
+        "exp_total": 4.32,
+        "p_over25": 80.5,
+        "p_btts": 76.9,
+        "home_scored_l5": [
+          2
+        ],
+        "home_conceded_l5": [
+          2
+        ],
+        "away_scored_l5": [
+          1
+        ],
+        "away_conceded_l5": [
+          2
+        ]
+      },
+      {
+        "date": "2026-09-05T16:30:00Z",
+        "home": "Hull City AFC",
+        "away": "Aston Villa FC",
+        "exp_home": 3.64,
+        "exp_away": 0.0,
+        "exp_total": 3.64,
+        "p_over25": 70.4,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          2
+        ],
+        "home_conceded_l5": [
+          0
+        ],
+        "away_scored_l5": [
+          0
+        ],
+        "away_conceded_l5": [
+          4
+        ]
+      },
+      {
+        "date": "2026-09-05T14:00:00Z",
+        "home": "Manchester City FC",
+        "away": "Coventry City FC",
+        "exp_home": 2.73,
+        "exp_away": 0.0,
+        "exp_total": 2.73,
+        "p_over25": 51.3,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          2
+        ],
+        "home_conceded_l5": [
+          1
+        ],
+        "away_scored_l5": [
+          0
+        ],
+        "away_conceded_l5": [
+          3
+        ]
+      },
+      {
+        "date": "2026-09-05T14:00:00Z",
+        "home": "Brentford FC",
+        "away": "Sunderland AFC",
+        "exp_home": 2.73,
+        "exp_away": 0.0,
+        "exp_total": 2.73,
+        "p_over25": 51.3,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          3
+        ],
+        "home_conceded_l5": [
+          0
+        ],
+        "away_scored_l5": [
+          1
+        ],
+        "away_conceded_l5": [
+          2
+        ]
+      },
+      {
+        "date": "2026-09-06T15:30:00Z",
+        "home": "Arsenal FC",
+        "away": "Chelsea FC",
+        "exp_home": 2.73,
+        "exp_away": 0.0,
+        "exp_total": 2.73,
+        "p_over25": 51.3,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          3
+        ],
+        "home_conceded_l5": [
+          0
+        ],
+        "away_scored_l5": [
+          3
+        ],
+        "away_conceded_l5": [
+          2
+        ]
+      },
+      {
+        "date": "2026-09-05T14:00:00Z",
+        "home": "Fulham FC",
+        "away": "Crystal Palace FC",
+        "exp_home": 1.82,
+        "exp_away": 0.0,
+        "exp_total": 1.82,
+        "p_over25": 27.4,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          2
+        ],
+        "home_conceded_l5": [
+          3
+        ],
+        "away_scored_l5": [
+          0
+        ],
+        "away_conceded_l5": [
+          2
+        ]
+      },
+      {
+        "date": "2026-09-06T13:00:00Z",
+        "home": "Everton FC",
+        "away": "Manchester United FC",
+        "exp_home": 1.82,
+        "exp_away": 0.0,
+        "exp_total": 1.82,
+        "p_over25": 27.4,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          2
+        ],
+        "home_conceded_l5": [
+          0
+        ],
+        "away_scored_l5": [
+          0
+        ],
+        "away_conceded_l5": [
+          2
+        ]
+      },
+      {
+        "date": "2026-09-05T14:00:00Z",
+        "home": "Nottingham Forest FC",
+        "away": "Tottenham Hotspur FC",
+        "exp_home": 0.0,
+        "exp_away": 0.0,
+        "exp_total": 0.0,
+        "p_over25": 0.0,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          0
+        ],
+        "home_conceded_l5": [
+          1
+        ],
+        "away_scored_l5": [
+          0
+        ],
+        "away_conceded_l5": [
+          3
+        ]
+      },
+      {
+        "date": "2026-09-05T14:00:00Z",
+        "home": "Brighton & Hove Albion FC",
+        "away": "Leeds United FC",
+        "exp_home": 0.0,
+        "exp_away": 0.0,
+        "exp_total": 0.0,
+        "p_over25": 0.0,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          4
+        ],
+        "home_conceded_l5": [
+          0
+        ],
+        "away_scored_l5": [
+          1
+        ],
+        "away_conceded_l5": [
+          0
+        ]
+      }
+    ]
+  },
+  "BL1": {
+    "name": "Bundesliga",
+    "fixtures": []
+  },
+  "DED": {
+    "name": "Eredivisie",
+    "fixtures": []
+  },
+  "FL1": {
+    "name": "Ligue 1",
+    "fixtures": [
+      {
+        "date": "2026-09-04T17:00:00Z",
+        "home": "Olympique Lyonnais",
+        "away": "AJ Auxerre",
+        "exp_home": 2.86,
+        "exp_away": 2.0,
+        "exp_total": 4.86,
+        "p_over25": 86.3,
+        "p_btts": 81.5,
+        "home_scored_l5": [
+          1
+        ],
+        "home_conceded_l5": [
+          1
+        ],
+        "away_scored_l5": [
+          2
+        ],
+        "away_conceded_l5": [
+          5
+        ]
+      },
+      {
+        "date": "2026-09-03T18:45:00Z",
+        "home": "Toulouse FC",
+        "away": "Lille OSC",
+        "exp_home": 0.0,
+        "exp_away": 4.0,
+        "exp_total": 4.0,
+        "p_over25": 76.2,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          0
+        ],
+        "home_conceded_l5": [
+          2
+        ],
+        "away_scored_l5": [
+          2
+        ],
+        "away_conceded_l5": [
+          0
+        ]
+      },
+      {
+        "date": "2026-09-05T18:45:00Z",
+        "home": "Le Havre AC",
+        "away": "Stade Brestois 29",
+        "exp_home": 0.0,
+        "exp_away": 2.0,
+        "exp_total": 2.0,
+        "p_over25": 32.3,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          0
+        ],
+        "home_conceded_l5": [
+          1
+        ],
+        "away_scored_l5": [
+          2
+        ],
+        "away_conceded_l5": [
+          2
+        ]
+      },
+      {
+        "date": "2026-09-05T15:15:00Z",
+        "home": "Racing Club de Lens",
+        "away": "FC Lorient",
+        "exp_home": 0.0,
+        "exp_away": 0.0,
+        "exp_total": 0.0,
+        "p_over25": 0.0,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          5
+        ],
+        "home_conceded_l5": [
+          2
+        ],
+        "away_scored_l5": [
+          0
+        ],
+        "away_conceded_l5": [
+          0
+        ]
+      },
+      {
+        "date": "2026-09-05T18:45:00Z",
+        "home": "OGC Nice",
+        "away": "Le Mans FC",
+        "exp_home": 0.0,
+        "exp_away": 0.0,
+        "exp_total": 0.0,
+        "p_over25": 0.0,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          0
+        ],
+        "home_conceded_l5": [
+          0
+        ],
+        "away_scored_l5": [
+          2
+        ],
+        "away_conceded_l5": [
+          3
+        ]
+      },
+      {
+        "date": "2026-09-06T13:00:00Z",
+        "home": "ES Troyes AC",
+        "away": "RC Strasbourg Alsace",
+        "exp_home": 0.0,
+        "exp_away": 0.0,
+        "exp_total": 0.0,
+        "p_over25": 0.0,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          0
+        ],
+        "home_conceded_l5": [
+          0
+        ],
+        "away_scored_l5": [
+          0
+        ],
+        "away_conceded_l5": [
+          4
+        ]
+      },
+      {
+        "date": "2026-09-06T18:45:00Z",
+        "home": "Olympique de Marseille",
+        "away": "Paris FC",
+        "exp_home": 0.0,
+        "exp_away": 0.0,
+        "exp_total": 0.0,
+        "p_over25": 0.0,
+        "p_btts": 0.0,
+        "home_scored_l5": [
+          4
+        ],
+        "home_conceded_l5": [
+          0
+        ],
+        "away_scored_l5": [
+          0
+        ],
+        "away_conceded_l5": [
+          0
+        ]
+      }
+    ]
+  },
+  "PPL": {
+    "name": "Primeira Liga",
+    "fixtures": [
+      {
+        "date": "2026-09-10T19:15:00Z",
+        "home": "CF Estrela da Amadora",
+        "away": "Sporting Clube de Braga",
+        "exp_home": 2.0,
+        "exp_away": 2.0,
+        "exp_total": 4.0,
+        "p_over25": 76.2,
+        "p_btts": 74.8,
+        "home_scored_l5": [
+          2
+        ],
+        "home_conceded_l5": [
+          2
+        ],
+        "away_scored_l5": [
+          2
+        ],
+        "away_conceded_l5": [
+          2
+        ]
+      }
+    ]
+  }
+}
