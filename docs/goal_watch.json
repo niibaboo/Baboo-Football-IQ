@@ -99,9 +99,20 @@
     "league_code": "BL1",
     "match": "SC Paderborn vs Freiburg",
     "date": "2026-09-05 13:30",
-    "exp_total": 3.35,
-    "over25": 63.3,
-    "btts": 49.4,
+    "exp_total": 3.55,
+    "over25": 66.9,
+    "btts": 52.2,
+    "home_form": null,
+    "away_form": null
+  },
+  {
+    "league": "Bundesliga",
+    "league_code": "BL1",
+    "match": "Schalke vs Bayern",
+    "date": "2026-09-05 16:30",
+    "exp_total": 3.45,
+    "over25": 65.1,
+    "btts": 50.8,
     "home_form": null,
     "away_form": null
   }
