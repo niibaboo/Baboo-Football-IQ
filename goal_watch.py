@@ -144,7 +144,7 @@ def get_team_form(team_id):
 PRIOR_STRENGTH = 3  # "worth" of league-average games blended in for small samples
 
 
-def shrink(form, lg_scored, lg_conceded):
+def shrink(form, lg_scored, lg_conceded, scored_key='avg_scored', conceded_key='avg_conceded'):
     """Early season (or after a long injury gap etc.), a team might only
     have 1-2 real games on record — trusting that tiny sample as a stable
     'true rate' is exactly the bug that produced 8-9 expected goals from a
@@ -152,10 +152,16 @@ def shrink(form, lg_scored, lg_conceded):
     average, weighted by how many real games back it up: with n_games=1 the
     league average dominates; by n_games=5+ the team's own form dominates.
     Same idea as the outlier-capping fix in the MLB tool, adapted for
-    'too little data' instead of 'one freak result in enough data'."""
+    'too little data' instead of 'one freak result in enough data'.
+
+    scored_key/conceded_key let this same function shrink either the
+    full-time or half-time stats — both need this protection for the same
+    reason, and a 1-game half-time sample is if anything MORE volatile
+    (fewer minutes, more likely to be 0-0) than a 1-game full-time sample.
+    """
     n = form.get('n_games', 1)
-    w_scored = (n * form['avg_scored'] + PRIOR_STRENGTH * lg_scored) / (n + PRIOR_STRENGTH)
-    w_conceded = (n * form['avg_conceded'] + PRIOR_STRENGTH * lg_conceded) / (n + PRIOR_STRENGTH)
+    w_scored = (n * form[scored_key] + PRIOR_STRENGTH * lg_scored) / (n + PRIOR_STRENGTH)
+    w_conceded = (n * form[conceded_key] + PRIOR_STRENGTH * lg_conceded) / (n + PRIOR_STRENGTH)
     return round(w_scored, 2), round(w_conceded, 2)
 
 
@@ -204,10 +210,23 @@ def predict(h_form, a_form, lg_avg_conceded, lg_avg_scored=None, h2h=None):
         'btts': round(p_btts * 100),
     }
 
-    # First-half projection — only if both sides have half-time data
+    # First-half projection — only if both sides have half-time data.
+    # Uses the SAME shrinkage as the full-time stats (this was missing
+    # before, which is why a 1-game sample produced a bare "0.0" — a
+    # single 0-0-at-half match was being trusted as the team's true rate).
+    # League half-time average is approximated as half the full-time
+    # league average — a reasonable proxy since no separate HT standings
+    # data exists to compute a real one.
     if 'avg_scored_ht' in h_form and 'avg_scored_ht' in a_form:
-        exp_home_ht = h_form['avg_scored_ht'] * (a_form.get('avg_conceded_ht', a_conceded) / max(lg_avg_conceded / 2, 0.1))
-        exp_away_ht = a_form['avg_scored_ht'] * (h_form.get('avg_conceded_ht', h_conceded) / max(lg_avg_conceded / 2, 0.1))
+        lg_scored_ht = max(lg_avg_scored / 2, 0.1)
+        lg_conceded_ht = max(lg_avg_conceded / 2, 0.1)
+        h_scored_ht, h_conceded_ht = shrink(h_form, lg_scored_ht, lg_conceded_ht,
+                                             'avg_scored_ht', 'avg_conceded_ht')
+        a_scored_ht, a_conceded_ht = shrink(a_form, lg_scored_ht, lg_conceded_ht,
+                                             'avg_scored_ht', 'avg_conceded_ht')
+
+        exp_home_ht = h_scored_ht * (a_conceded_ht / lg_conceded_ht)
+        exp_away_ht = a_scored_ht * (h_conceded_ht / lg_conceded_ht)
         exp_ht_total = round(exp_home_ht + exp_away_ht, 2)
         result['exp_ht_total'] = exp_ht_total
         result['over05_ht'] = round((1 - poisson_cdf(0, exp_ht_total)) * 100)
