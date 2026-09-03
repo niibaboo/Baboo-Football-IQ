@@ -1,0 +1,5 @@
+name: Goal Watch Daily
+
+on:
+  schedule:
+    - cron: '0 6 
