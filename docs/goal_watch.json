@@ -41,9 +41,9 @@
     "exp_total": 5.16,
     "over25": 89,
     "btts": 82,
-    "exp_ht_total": 1.57,
-    "over05_ht": 79,
-    "over15_ht": 47
+    "exp_ht_total": 1.81,
+    "over05_ht": 84,
+    "over15_ht": 54
   },
   {
     "league": "Bundesliga",
@@ -87,9 +87,9 @@
     "exp_total": 4.47,
     "over25": 82,
     "btts": 78,
-    "exp_ht_total": 0.0,
-    "over05_ht": 0,
-    "over15_ht": 0
+    "exp_ht_total": 1.47,
+    "over05_ht": 77,
+    "over15_ht": 43
   },
   {
     "league": "Bundesliga",
@@ -133,9 +133,9 @@
     "exp_total": 4.39,
     "over25": 81,
     "btts": 82,
-    "exp_ht_total": 2.06,
-    "over05_ht": 87,
-    "over15_ht": 61
+    "exp_ht_total": 2.16,
+    "over05_ht": 88,
+    "over15_ht": 64
   },
   {
     "league": "Premier League",
@@ -179,9 +179,9 @@
     "exp_total": 4.19,
     "over25": 79,
     "btts": 78,
-    "exp_ht_total": 1.29,
-    "over05_ht": 72,
-    "over15_ht": 37
+    "exp_ht_total": 1.48,
+    "over05_ht": 77,
+    "over15_ht": 44
   },
   {
     "league": "Eredivisie",
@@ -271,9 +271,9 @@
     "exp_total": 3.92,
     "over25": 75,
     "btts": 68,
-    "exp_ht_total": 2.06,
-    "over05_ht": 87,
-    "over15_ht": 61
+    "exp_ht_total": 1.79,
+    "over05_ht": 83,
+    "over15_ht": 53
   },
   {
     "league": "Eredivisie",
@@ -317,9 +317,9 @@
     "exp_total": 3.86,
     "over25": 74,
     "btts": 73,
-    "exp_ht_total": 1.25,
-    "over05_ht": 71,
-    "over15_ht": 36
+    "exp_ht_total": 1.71,
+    "over05_ht": 82,
+    "over15_ht": 51
   },
   {
     "league": "La Liga",
@@ -363,8 +363,8 @@
     "exp_total": 3.71,
     "over25": 72,
     "btts": 70,
-    "exp_ht_total": 2.2,
-    "over05_ht": 89,
-    "over15_ht": 65
+    "exp_ht_total": 1.84,
+    "over05_ht": 84,
+    "over15_ht": 55
   }
 ]
