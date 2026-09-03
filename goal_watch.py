@@ -25,10 +25,12 @@ def _get(url, timeout=15):
     try:
         r = requests.get(url, headers=HEAD, timeout=timeout)
         time.sleep(REQUEST_DELAY)
+        if r.status_code != 200:
+            print(f"  [!] {r.status_code} on {url} — {r.text[:200]}")
         return r
     except Exception as e:
         time.sleep(REQUEST_DELAY)
-        print(f"request failed: {url} ({e})")
+        print(f"  [!] request failed: {url} ({e})")
         return None
 
 
@@ -140,15 +142,23 @@ def get_games():
         url = f"{BASE}/competitions/{code}/matches?dateFrom={date_from}&dateTo={date_to}"
         r = _get(url)
         if r is None or r.status_code != 200:
+            print(f"{meta['name']}: matches fetch failed, skipping league")
             continue
 
         try:
             matches = r.json().get('matches', [])
         except Exception:
+            print(f"{meta['name']}: couldn't parse matches response")
             continue
 
+        print(f"{meta['name']}: {len(matches)} matches in window")
+        added = 0
         for m in matches[:4]:
-            if m['status'] != 'SCHEDULED':
+            # football-data.org marks matches with a confirmed kickoff time
+            # as TIMED rather than SCHEDULED — both mean "upcoming, not yet
+            # played." Filtering only on SCHEDULED silently drops most
+            # near-term fixtures, which is very likely why nothing showed up.
+            if m['status'] not in ('SCHEDULED', 'TIMED'):
                 continue
 
             h_id, a_id = m['homeTeam']['id'], m['awayTeam']['id']
@@ -159,6 +169,7 @@ def get_games():
             # team, etc.), skip the game rather than silently substituting
             # a fake number that looks like a real prediction.
             if not h_form or not a_form:
+                print(f"  skipping {m['homeTeam']['shortName']} vs {m['awayTeam']['shortName']}: missing form data (home={bool(h_form)}, away={bool(a_form)})")
                 continue
 
             exp_total, over25, btts = predict(h_form, a_form, lg_avg_conceded)
@@ -176,6 +187,9 @@ def get_games():
                 "home_pos": f"{h_pos.get('pos','?')}th ({h_pos.get('pts','?')}pts)" if h_pos else "",
                 "away_pos": f"{a_pos.get('pos','?')}th ({a_pos.get('pts','?')}pts)" if a_pos else "",
             })
+            added += 1
+
+        print(f"{meta['name']}: added {added} games")
 
     return sorted(out, key=lambda x: x['exp_total'], reverse=True)[:8]
 
