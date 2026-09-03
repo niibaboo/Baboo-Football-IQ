@@ -6,13 +6,17 @@
     "exp_total": 3.85,
     "over25": 71,
     "btts": 65,
+    "home_team": "PSV",
+    "away_team": "Ajax",
     "home_form": {
       "avg_scored": 2.1,
-      "avg_conceded": 0.9
+      "avg_conceded": 0.9,
+      "total_avg": 3.0
     },
     "away_form": {
       "avg_scored": 1.9,
-      "avg_conceded": 1.1
+      "avg_conceded": 1.1,
+      "total_avg": 3.0
     }
   },
   {
@@ -22,13 +26,17 @@
     "exp_total": 3.72,
     "over25": 68,
     "btts": 62,
+    "home_team": "Bayern",
+    "away_team": "Dortmund",
     "home_form": {
       "avg_scored": 2.3,
-      "avg_conceded": 1.0
+      "avg_conceded": 1.0,
+      "total_avg": 3.3
     },
     "away_form": {
       "avg_scored": 1.8,
-      "avg_conceded": 1.2
+      "avg_conceded": 1.2,
+      "total_avg": 3.0
     }
   },
   {
@@ -38,13 +46,17 @@
     "exp_total": 3.45,
     "over25": 62,
     "btts": 58,
+    "home_team": "Man City",
+    "away_team": "Arsenal",
     "home_form": {
       "avg_scored": 1.9,
-      "avg_conceded": 0.8
+      "avg_conceded": 0.8,
+      "total_avg": 2.7
     },
     "away_form": {
       "avg_scored": 1.7,
-      "avg_conceded": 1.0
+      "avg_conceded": 1.0,
+      "total_avg": 2.7
     }
   }
 ]
