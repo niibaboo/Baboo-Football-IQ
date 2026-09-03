@@ -1,1 +1,210 @@
-[]
+[
+  {
+    "league": "Bundesliga",
+    "match": "Stuttgart vs 1. FC K\u00f6ln",
+    "date": "2026-09-04 18:30 UTC",
+    "exp_total": 8.74,
+    "over25": 99,
+    "btts": 64,
+    "home_team": "Stuttgart",
+    "away_team": "1. FC K\u00f6ln",
+    "home_form": {
+      "avg_scored": 1.0,
+      "avg_conceded": 5.0,
+      "total_avg": 6.0,
+      "form_str": "L",
+      "last5_goals": "1 scored in last 1"
+    },
+    "away_form": {
+      "avg_scored": 3.0,
+      "avg_conceded": 2.0,
+      "total_avg": 5.0,
+      "form_str": "W",
+      "last5_goals": "3 scored in last 1"
+    },
+    "home_pos": "18th (0pts)",
+    "away_pos": "6th (3pts)"
+  },
+  {
+    "league": "Bundesliga",
+    "match": "Leverkusen vs Union Berlin",
+    "date": "2026-09-05 13:30 UTC",
+    "exp_total": 7.71,
+    "over25": 98,
+    "btts": 94,
+    "home_team": "Leverkusen",
+    "away_team": "Union Berlin",
+    "home_form": {
+      "avg_scored": 2.0,
+      "avg_conceded": 3.0,
+      "total_avg": 5.0,
+      "form_str": "L",
+      "last5_goals": "2 scored in last 1"
+    },
+    "away_form": {
+      "avg_scored": 3.0,
+      "avg_conceded": 3.0,
+      "total_avg": 6.0,
+      "form_str": "D",
+      "last5_goals": "3 scored in last 1"
+    },
+    "home_pos": "12th (0pts)",
+    "away_pos": "8th (1pts)"
+  },
+  {
+    "league": "Eredivisie",
+    "match": "Utrecht vs Go Ahead",
+    "date": "2026-09-05 16:45 UTC",
+    "exp_total": 6.89,
+    "over25": 97,
+    "btts": 81,
+    "home_team": "Utrecht",
+    "away_team": "Go Ahead",
+    "home_form": {
+      "avg_scored": 1.5,
+      "avg_conceded": 3.75,
+      "total_avg": 5.2,
+      "form_str": "L-D-L-L",
+      "last5_goals": "6 scored in last 4"
+    },
+    "away_form": {
+      "avg_scored": 2.75,
+      "avg_conceded": 2.25,
+      "total_avg": 5.0,
+      "form_str": "L-W-D-W",
+      "last5_goals": "11 scored in last 4"
+    },
+    "home_pos": "17th (1pts)",
+    "away_pos": "5th (7pts)"
+  },
+  {
+    "league": "Premier League",
+    "match": "Ipswich Town vs Liverpool",
+    "date": "2026-09-04 19:00 UTC",
+    "exp_total": 6.45,
+    "over25": 96,
+    "btts": 91,
+    "home_team": "Ipswich Town",
+    "away_team": "Liverpool",
+    "home_form": {
+      "avg_scored": 2.0,
+      "avg_conceded": 3.0,
+      "total_avg": 5.0,
+      "form_str": "L-W",
+      "last5_goals": "4 scored in last 2"
+    },
+    "away_form": {
+      "avg_scored": 2.0,
+      "avg_conceded": 2.0,
+      "total_avg": 4.0,
+      "form_str": "D-D",
+      "last5_goals": "4 scored in last 2"
+    },
+    "home_pos": "12th (3pts)",
+    "away_pos": "13th (2pts)"
+  },
+  {
+    "league": "Bundesliga",
+    "match": "Bremen vs RB Leipzig",
+    "date": "2026-09-05 13:30 UTC",
+    "exp_total": 6.17,
+    "over25": 95,
+    "btts": 0,
+    "home_team": "Bremen",
+    "away_team": "RB Leipzig",
+    "home_form": {
+      "avg_scored": 1.0,
+      "avg_conceded": 4.0,
+      "total_avg": 5.0,
+      "form_str": "L",
+      "last5_goals": "1 scored in last 1"
+    },
+    "away_form": {
+      "avg_scored": 3.0,
+      "avg_conceded": 0.0,
+      "total_avg": 3.0,
+      "form_str": "W",
+      "last5_goals": "3 scored in last 1"
+    },
+    "home_pos": "15th (0pts)",
+    "away_pos": "3th (3pts)"
+  },
+  {
+    "league": "Primeira Liga",
+    "match": "Mar\u00edtimo vs SL Benfica",
+    "date": "2026-09-05 17:00 UTC",
+    "exp_total": 4.57,
+    "over25": 83,
+    "btts": 65,
+    "home_team": "Mar\u00edtimo",
+    "away_team": "SL Benfica",
+    "home_form": {
+      "avg_scored": 1.5,
+      "avg_conceded": 1.25,
+      "total_avg": 2.8,
+      "form_str": "L-D-W-W",
+      "last5_goals": "6 scored in last 4"
+    },
+    "away_form": {
+      "avg_scored": 3.67,
+      "avg_conceded": 1.0,
+      "total_avg": 4.7,
+      "form_str": "W-W-D",
+      "last5_goals": "11 scored in last 3"
+    },
+    "home_pos": "7th (7pts)",
+    "away_pos": "5th (7pts)"
+  },
+  {
+    "league": "La Liga",
+    "match": "Rayo Vallecano vs Santander",
+    "date": "2026-09-05 16:30 UTC",
+    "exp_total": 4.55,
+    "over25": 83,
+    "btts": 74,
+    "home_team": "Rayo Vallecano",
+    "away_team": "Santander",
+    "home_form": {
+      "avg_scored": 1.33,
+      "avg_conceded": 2.67,
+      "total_avg": 4.0,
+      "form_str": "L-D-L",
+      "last5_goals": "4 scored in last 3"
+    },
+    "away_form": {
+      "avg_scored": 1.67,
+      "avg_conceded": 1.67,
+      "total_avg": 3.3,
+      "form_str": "W-L-D",
+      "last5_goals": "5 scored in last 3"
+    },
+    "home_pos": "18th (1pts)",
+    "away_pos": "9th (4pts)"
+  },
+  {
+    "league": "Premier League",
+    "match": "Man City vs Coventry City",
+    "date": "2026-09-05 14:00 UTC",
+    "exp_total": 3.87,
+    "over25": 74,
+    "btts": 0,
+    "home_team": "Man City",
+    "away_team": "Coventry City",
+    "home_form": {
+      "avg_scored": 3.0,
+      "avg_conceded": 1.0,
+      "total_avg": 4.0,
+      "form_str": "W-W",
+      "last5_goals": "6 scored in last 2"
+    },
+    "away_form": {
+      "avg_scored": 0.0,
+      "avg_conceded": 2.0,
+      "total_avg": 2.0,
+      "form_str": "L-L",
+      "last5_goals": "0 scored in last 2"
+    },
+    "home_pos": "1th (6pts)",
+    "away_pos": "17th (0pts)"
+  }
+]
