@@ -74,6 +74,14 @@ def league_avg_conceded(standings):
     return sum(rates) / len(rates) if rates else 1.3  # sane fallback if standings unavailable
 
 
+def league_avg_scored(standings):
+    rates = [
+        v['gf'] / v['played'] for v in standings.values()
+        if v.get('played')
+    ]
+    return sum(rates) / len(rates) if rates else 1.3
+
+
 def get_team_form(team_id):
     if team_id in team_form_cache:
         return team_form_cache[team_id]
@@ -105,6 +113,7 @@ def get_team_form(team_id):
             'total_avg': round((sum(scored) + sum(conceded)) / len(scored), 1),
             'form_str': '-'.join(results[::-1]),
             'last5_goals': f"{sum(scored)} scored in last {len(scored)}",
+            'n_games': len(scored),
         }
         team_form_cache[team_id] = form
         return form
@@ -112,14 +121,44 @@ def get_team_form(team_id):
         return None
 
 
-def predict(h_form, a_form, lg_avg_conceded):
+PRIOR_STRENGTH = 3  # "worth" of league-average games blended in for small samples
+
+
+def shrink(form, lg_scored, lg_conceded):
+    """Early season (or after a long injury gap etc.), a team might only
+    have 1-2 real games on record — trusting that tiny sample as a stable
+    'true rate' is exactly the bug that produced 8-9 expected goals from a
+    single 1-5 loss. This blends the team's own average with the league
+    average, weighted by how many real games back it up: with n_games=1 the
+    league average dominates; by n_games=5+ the team's own form dominates.
+    Same idea as the outlier-capping fix in the MLB tool, adapted for
+    'too little data' instead of 'one freak result in enough data'."""
+    n = form.get('n_games', 1)
+    w_scored = (n * form['avg_scored'] + PRIOR_STRENGTH * lg_scored) / (n + PRIOR_STRENGTH)
+    w_conceded = (n * form['avg_conceded'] + PRIOR_STRENGTH * lg_conceded) / (n + PRIOR_STRENGTH)
+    return round(w_scored, 2), round(w_conceded, 2)
+
+
+def predict(h_form, a_form, lg_avg_conceded, lg_avg_scored=None):
     """Real Poisson projection from the actual form data — this is the part
     that was previously disconnected (a per-league guess + the match ID's
     digits stood in for a real calculation). Same shape as our earlier
     goal_watch.py: each side's scoring rate normalized against how much the
-    opponent's league tends to concede."""
-    exp_home = h_form['avg_scored'] * (a_form['avg_conceded'] / lg_avg_conceded)
-    exp_away = a_form['avg_scored'] * (h_form['avg_conceded'] / lg_avg_conceded)
+    opponent's league tends to concede.
+
+    Both teams' raw averages are first shrunk toward the league average
+    based on sample size (see shrink()) — this keeps a 1-game sample from
+    producing an absurd projection while barely affecting a team with a
+    full 5-game sample.
+    """
+    if lg_avg_scored is None:
+        lg_avg_scored = lg_avg_conceded  # fallback if caller doesn't have it separately
+
+    h_scored, h_conceded = shrink(h_form, lg_avg_scored, lg_avg_conceded)
+    a_scored, a_conceded = shrink(a_form, lg_avg_scored, lg_avg_conceded)
+
+    exp_home = h_scored * (a_conceded / lg_avg_conceded)
+    exp_away = a_scored * (h_conceded / lg_avg_conceded)
     exp_total = round(exp_home + exp_away, 2)
 
     p_over25 = 1 - poisson_cdf(2, exp_total)
@@ -138,6 +177,7 @@ def get_games():
     for code, meta in LEAGUES.items():
         standings = get_standings(code)
         lg_avg_conceded = league_avg_conceded(standings)
+        lg_avg_scored = league_avg_scored(standings)
 
         url = f"{BASE}/competitions/{code}/matches?dateFrom={date_from}&dateTo={date_to}"
         r = _get(url)
@@ -172,7 +212,7 @@ def get_games():
                 print(f"  skipping {m['homeTeam']['shortName']} vs {m['awayTeam']['shortName']}: missing form data (home={bool(h_form)}, away={bool(a_form)})")
                 continue
 
-            exp_total, over25, btts = predict(h_form, a_form, lg_avg_conceded)
+            exp_total, over25, btts = predict(h_form, a_form, lg_avg_conceded, lg_avg_scored)
 
             h_pos = standings.get(h_id, {})
             a_pos = standings.get(a_id, {})
