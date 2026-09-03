@@ -1,1 +1,50 @@
-
+[
+  {
+    "league": "Eredivisie",
+    "match": "PSV vs Ajax",
+    "date": "2026-09-12 19:00 UTC",
+    "exp_total": 3.85,
+    "over25": 71,
+    "btts": 65,
+    "home_form": {
+      "avg_scored": 2.1,
+      "avg_conceded": 0.9
+    },
+    "away_form": {
+      "avg_scored": 1.9,
+      "avg_conceded": 1.1
+    }
+  },
+  {
+    "league": "Bundesliga",
+    "match": "Bayern vs Dortmund",
+    "date": "2026-09-13 18:30 UTC",
+    "exp_total": 3.72,
+    "over25": 68,
+    "btts": 62,
+    "home_form": {
+      "avg_scored": 2.3,
+      "avg_conceded": 1.0
+    },
+    "away_form": {
+      "avg_scored": 1.8,
+      "avg_conceded": 1.2
+    }
+  },
+  {
+    "league": "Premier League",
+    "match": "Man City vs Arsenal",
+    "date": "2026-09-14 16:30 UTC",
+    "exp_total": 3.45,
+    "over25": 62,
+    "btts": 58,
+    "home_form": {
+      "avg_scored": 1.9,
+      "avg_conceded": 0.8
+    },
+    "away_form": {
+      "avg_scored": 1.7,
+      "avg_conceded": 1.0
+    }
+  }
+]
