@@ -42,6 +42,22 @@ def poisson_cdf(k, lam):
     return sum(poisson_pmf(i, lam) for i in range(k + 1))
 
 
+def top_correct_scores(exp_home, exp_away, top_n=5, max_goals=6):
+    """Joint probability of every home/away goal combination, assuming
+    independence between the two scorelines (same simplifying assumption
+    BTTS already makes — real matches correlate the two slightly, e.g. a
+    team already up 3-0 tends to ease off, but this doesn't correct for
+    that). 0-6 goals each side covers the overwhelming majority of
+    realistic outcomes; returns the top N most likely exact scores."""
+    scores = []
+    for h in range(max_goals + 1):
+        for a in range(max_goals + 1):
+            p = poisson_pmf(h, exp_home) * poisson_pmf(a, exp_away)
+            scores.append((f"{h}-{a}", p))
+    scores.sort(key=lambda x: x[1], reverse=True)
+    return [{'score': s, 'pct': round(p * 100, 1)} for s, p in scores[:top_n]]
+
+
 def get_standings(league_code):
     if league_code in standings_cache:
         return standings_cache[league_code]
@@ -193,10 +209,20 @@ def predict(h_form, a_form, lg_avg_conceded, lg_avg_scored=None, h2h=None):
 
     exp_home = h_scored * (a_conceded / lg_avg_conceded)
     exp_away = a_scored * (h_conceded / lg_avg_conceded)
-    exp_total = exp_home + exp_away
+    exp_total_raw = exp_home + exp_away
 
     if h2h and h2h.get('n_matches', 0) >= 3:
-        exp_total = 0.85 * exp_total + 0.15 * h2h['avg_goals']
+        exp_total = 0.85 * exp_total_raw + 0.15 * h2h['avg_goals']
+        # Redistribute the nudge proportionally across home/away so every
+        # downstream number (BTTS, correct score) stays consistent with the
+        # displayed EXP total, instead of only the total being nudged while
+        # BTTS quietly used the un-nudged split (a small inconsistency in
+        # the original version of this).
+        scale = exp_total / exp_total_raw if exp_total_raw > 0 else 1
+        exp_home *= scale
+        exp_away *= scale
+    else:
+        exp_total = exp_total_raw
     exp_total = round(exp_total, 2)
 
     p_over25 = 1 - poisson_cdf(2, exp_total)
@@ -206,8 +232,11 @@ def predict(h_form, a_form, lg_avg_conceded, lg_avg_scored=None, h2h=None):
 
     result = {
         'exp_total': exp_total,
+        'exp_home': round(exp_home, 2),
+        'exp_away': round(exp_away, 2),
         'over25': round(p_over25 * 100),
         'btts': round(p_btts * 100),
+        'correct_scores': top_correct_scores(exp_home, exp_away),
     }
 
     # First-half projection — only if both sides have half-time data.
@@ -355,6 +384,15 @@ def make_html(games):
             h2h_row = f"""
   <div style="color:#888;font-size:10px;margin-top:8px;text-align:center">H2H (last {h2h['n_matches']}): {h2h['avg_goals']} goals/game avg · {h2h.get('home_wins','?')}W-{h2h.get('draws','?')}D-{h2h.get('away_wins','?')}W</div>"""
 
+        cs_row = ""
+        if g.get('correct_scores'):
+            cs_items = "".join(
+                f'<span style="background:#0f0f0f;border-radius:6px;padding:4px 8px;margin:2px;display:inline-block;font-size:11px"><b style="color:#c792ea">{c["score"]}</b> <span style="color:#888">{c["pct"]}%</span></span>'
+                for c in g['correct_scores']
+            )
+            cs_row = f"""
+  <div style="margin-top:8px;text-align:center">{cs_items}</div>"""
+
         hf, af = g['home_form'], g['away_form']
         cards += f"""
 <div style="background:#1e1e1e;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #333">
@@ -364,7 +402,7 @@ def make_html(games):
     <div><div style="color:#aaa;font-size:11px">EXP</div><div style="color:#ffeb3b;font-size:20px;font-weight:bold">{g['exp_total']}</div></div>
     <div><div style="color:#aaa;font-size:11px">OVER 2.5</div><div style="color:#ffeb3b;font-size:20px;font-weight:bold">{g['over25']}%</div></div>
     <div><div style="color:#aaa;font-size:11px">BTTS</div><div style="color:#ffeb3b;font-size:20px;font-weight:bold">{g['btts']}%</div></div>
-  </div>{ht_row}
+  </div>{ht_row}{cs_row}
   <div style="background:#0f0f0f;border-radius:8px;padding:8px;margin-top:10px;display:flex;justify-content:space-between;font-size:11px">
     <div><div style="color:#888">🏠 {g['home_team']} [{hf['form_str']}]</div><div style="color:white">{hf['avg_scored']} scored • {hf['avg_conceded']} conc • avg {hf['total_avg']}</div><div style="color:#666;font-size:10px">clean sheets {hf['clean_sheet_pct']}% • blanks {hf['blank_pct']}%</div></div>
     <div style="text-align:right"><div style="color:#888">✈️ {g['away_team']} [{af['form_str']}]</div><div style="color:white">{af['avg_scored']} scored • {af['avg_conceded']} conc • avg {af['total_avg']}</div><div style="color:#666;font-size:10px">clean sheets {af['clean_sheet_pct']}% • blanks {af['blank_pct']}%</div></div>
