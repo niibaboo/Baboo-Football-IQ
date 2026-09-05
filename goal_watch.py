@@ -352,6 +352,7 @@ def get_games():
                 "league": meta['name'],
                 "match": f"{m['homeTeam']['shortName']} vs {m['awayTeam']['shortName']}",
                 "date": m['utcDate'][:16].replace("T", " ") + " UTC",
+                "date_key": m['utcDate'][:10],  # YYYY-MM-DD, used to group into per-day pages
                 "home_team": m['homeTeam']['shortName'], "away_team": m['awayTeam']['shortName'],
                 "home_form": h_form, "away_form": a_form,
                 "home_pos": f"{h_pos.get('pos','?')}th ({h_pos.get('pts','?')}pts)" if h_pos else "",
@@ -363,10 +364,19 @@ def get_games():
 
         print(f"{meta['name']}: added {added} games")
 
-    return sorted(out, key=lambda x: x['exp_total'], reverse=True)[:8]
+    # Return everything — the old [:8] truncation discarded fixtures needed
+    # for other days. Per-day capping (if wanted) now happens at render time.
+    return sorted(out, key=lambda x: (x['date_key'], -x['exp_total']))
 
 
-def make_html(games):
+def group_by_date(games):
+    by_date = {}
+    for g in games:
+        by_date.setdefault(g['date_key'], []).append(g)
+    return dict(sorted(by_date.items()))
+
+
+def make_html(games, date_label=None, prev_href=None, next_href=None, csv_href="goal_iq_predictions.csv"):
     cards = ""
     for g in games:
         ht_row = ""
@@ -408,12 +418,22 @@ def make_html(games):
     <div style="text-align:right"><div style="color:#888">✈️ {g['away_team']} [{af['form_str']}]</div><div style="color:white">{af['avg_scored']} scored • {af['avg_conceded']} conc • avg {af['total_avg']}</div><div style="color:#666;font-size:10px">clean sheets {af['clean_sheet_pct']}% • blanks {af['blank_pct']}%</div></div>
   </div>{h2h_row}
 </div>"""
+    prev_link = f'<a href="{prev_href}" style="color:#7ec8ff;text-decoration:none;font-size:20px">◀</a>' if prev_href else '<span style="color:#444;font-size:20px">◀</span>'
+    next_link = f'<a href="{next_href}" style="color:#7ec8ff;text-decoration:none;font-size:20px">▶</a>' if next_href else '<span style="color:#444;font-size:20px">▶</span>'
+    date_bar = f"""
+<div style="display:flex;align-items:center;justify-content:center;gap:20px;margin:10px 0 4px">
+  {prev_link}
+  <span style="font-size:15px;font-weight:bold">{date_label or ''}</span>
+  {next_link}
+</div>""" if date_label else ""
+
     html = f"""<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Baboo Goal IQ</title></head>
 <body style="background:#121212;color:white;font-family:Arial;padding:12px;max-width:600px;margin:auto">
 <h2 style="text-align:center">⚽ BABOO GOAL IQ v2 — REAL FORM</h2>
 <p style="text-align:center;color:#888;font-size:11px">Real last-5 avg + standings, Poisson-projected · {datetime.now().strftime('%d %b %H:%M')} BST</p>
-<p style="text-align:center;margin-bottom:16px"><a href="goal_iq_predictions.csv" download style="background:#222;border:1px solid #444;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:13px">⬇ Download CSV</a></p>
-{cards if cards else '<p style="text-align:center;color:#888">No scheduled fixtures with usable form data right now — check back once the season is underway.</p>'}
+{date_bar}
+<p style="text-align:center;margin-bottom:16px"><a href="{csv_href}" download style="background:#222;border:1px solid #444;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:13px">⬇ Download CSV</a></p>
+{cards if cards else '<p style="text-align:center;color:#888">No fixtures with usable form data on this date.</p>'}
 </body></html>"""
     return html
 
@@ -451,6 +471,17 @@ def write_csv(games, path):
             ])
 
 
+def date_page_filename(date_key):
+    return f"day-{date_key}.html"
+
+
+def format_date_label(date_key):
+    try:
+        return datetime.strptime(date_key, "%Y-%m-%d").strftime("%a %d %b")
+    except Exception:
+        return date_key
+
+
 def main():
     games = get_games()
     # No hardcoded demo fallback anymore — an empty state is shown honestly
@@ -458,15 +489,48 @@ def main():
     # without knowing it.
 
     os.makedirs('docs', exist_ok=True)
-    html = make_html(games)
+
+    by_date = group_by_date(games)
+    date_keys = list(by_date.keys())
+
+    if not date_keys:
+        # Nothing at all — write an honest empty index page, same as before.
+        html = make_html([])
+        with open('docs/index.html', 'w') as f:
+            f.write(html)
+    else:
+        for i, date_key in enumerate(date_keys):
+            prev_href = date_page_filename(date_keys[i - 1]) if i > 0 else None
+            next_href = date_page_filename(date_keys[i + 1]) if i < len(date_keys) - 1 else None
+            page_html = make_html(
+                by_date[date_key],
+                date_label=format_date_label(date_key),
+                prev_href=prev_href,
+                next_href=next_href,
+            )
+            with open(f"docs/{date_page_filename(date_key)}", 'w') as f:
+                f.write(page_html)
+
+        # index.html = a copy of the soonest date's page, so the root URL
+        # lands somewhere sensible and you navigate forward from there.
+        with open(f"docs/{date_page_filename(date_keys[0])}") as f:
+            soonest_html = f.read()
+        with open('docs/index.html', 'w') as f:
+            f.write(soonest_html)
+        # Compatibility alias: your workflow has a step that does
+        # `cp docs/goal_watch.html docs/index.html` — without this file
+        # existing, that step fails and the whole run breaks. Keeping it
+        # as a duplicate of index.html is harmless (the cp just overwrites
+        # index.html with identical content), and you can remove that
+        # workflow step later since main() now writes index.html directly.
+        with open('docs/goal_watch.html', 'w') as f:
+            f.write(soonest_html)
+
     for p in ['docs/goal_watch.json', 'goal_watch.json']:
         with open(p, 'w') as f:
             json.dump(games, f, indent=2)
-    for p in ['docs/index.html', 'docs/goal_watch.html']:
-        with open(p, 'w') as f:
-            f.write(html)
     write_csv(games, 'docs/goal_iq_predictions.csv')
-    print(f"Done v2 — {len(games)} real, fully-computed games")
+    print(f"Done v2 — {len(games)} real, fully-computed games across {len(date_keys)} date(s)")
 
 
 if __name__ == "__main__":
