@@ -3,6 +3,7 @@
     "league": "La Liga",
     "match": "Valencia vs Bar\u00e7a",
     "date": "2026-09-06 14:15 UTC",
+    "date_key": "2026-09-06",
     "home_team": "Valencia",
     "away_team": "Bar\u00e7a",
     "home_form": {
