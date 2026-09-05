@@ -1,562 +1,72 @@
 [
   {
-    "league": "Eredivisie",
-    "match": "Utrecht vs Go Ahead",
-    "date": "2026-09-05 16:45 UTC",
-    "home_team": "Utrecht",
-    "away_team": "Go Ahead",
+    "league": "La Liga",
+    "match": "Valencia vs Bar\u00e7a",
+    "date": "2026-09-06 14:15 UTC",
+    "home_team": "Valencia",
+    "away_team": "Bar\u00e7a",
     "home_form": {
-      "avg_scored": 1.5,
-      "avg_conceded": 3.75,
-      "total_avg": 5.2,
-      "form_str": "L-D-L-L",
-      "last5_goals": "6 scored in last 4",
-      "n_games": 4,
-      "clean_sheet_pct": 0,
-      "blank_pct": 0,
-      "avg_scored_ht": 0.5,
-      "avg_conceded_ht": 1.25
-    },
-    "away_form": {
-      "avg_scored": 2.75,
-      "avg_conceded": 2.25,
-      "total_avg": 5.0,
-      "form_str": "L-W-D-W",
-      "last5_goals": "11 scored in last 4",
-      "n_games": 4,
-      "clean_sheet_pct": 0,
-      "blank_pct": 0,
-      "avg_scored_ht": 0.75,
-      "avg_conceded_ht": 1.25
-    },
-    "home_pos": "17th (1pts)",
-    "away_pos": "5th (7pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 3.07,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 6
-    },
-    "exp_total": 5.17,
-    "exp_home": 1.74,
-    "exp_away": 3.43,
-    "over25": 89,
-    "btts": 80,
-    "correct_scores": [
-      {
-        "score": "1-3",
-        "pct": 6.7
-      },
-      {
-        "score": "1-2",
-        "pct": 5.8
-      },
-      {
-        "score": "2-3",
-        "pct": 5.8
-      },
-      {
-        "score": "1-4",
-        "pct": 5.7
-      },
-      {
-        "score": "2-2",
-        "pct": 5.1
-      }
-    ],
-    "exp_ht_total": 1.81,
-    "over05_ht": 84,
-    "over15_ht": 54
-  },
-  {
-    "league": "Bundesliga",
-    "match": "Leverkusen vs Union Berlin",
-    "date": "2026-09-05 13:30 UTC",
-    "home_team": "Leverkusen",
-    "away_team": "Union Berlin",
-    "home_form": {
-      "avg_scored": 2.0,
-      "avg_conceded": 3.0,
-      "total_avg": 5.0,
-      "form_str": "L",
-      "last5_goals": "2 scored in last 1",
-      "n_games": 1,
-      "clean_sheet_pct": 0,
-      "blank_pct": 0,
-      "avg_scored_ht": 0.0,
-      "avg_conceded_ht": 2.0
-    },
-    "away_form": {
-      "avg_scored": 3.0,
-      "avg_conceded": 3.0,
-      "total_avg": 6.0,
-      "form_str": "D",
-      "last5_goals": "3 scored in last 1",
-      "n_games": 1,
-      "clean_sheet_pct": 0,
-      "blank_pct": 0,
-      "avg_scored_ht": 1.0,
-      "avg_conceded_ht": 2.0
-    },
-    "home_pos": "13th (0pts)",
-    "away_pos": "9th (1pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 2.4,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 5
-    },
-    "exp_total": 4.47,
-    "exp_home": 2.1,
-    "exp_away": 2.37,
-    "over25": 82,
-    "btts": 80,
-    "correct_scores": [
-      {
-        "score": "2-2",
-        "pct": 7.1
-      },
-      {
-        "score": "1-2",
-        "pct": 6.7
-      },
-      {
-        "score": "2-1",
-        "pct": 6.0
-      },
-      {
-        "score": "1-1",
-        "pct": 5.7
-      },
-      {
-        "score": "2-3",
-        "pct": 5.6
-      }
-    ],
-    "exp_ht_total": 2.22,
-    "over05_ht": 89,
-    "over15_ht": 65
-  },
-  {
-    "league": "Bundesliga",
-    "match": "M'gladbach vs Elversberg",
-    "date": "2026-09-05 13:30 UTC",
-    "home_team": "M'gladbach",
-    "away_team": "Elversberg",
-    "home_form": {
-      "avg_scored": 0.0,
-      "avg_conceded": 3.0,
-      "total_avg": 3.0,
-      "form_str": "L",
-      "last5_goals": "0 scored in last 1",
-      "n_games": 1,
-      "clean_sheet_pct": 0,
-      "blank_pct": 100,
-      "avg_scored_ht": 0.0,
-      "avg_conceded_ht": 1.0
-    },
-    "away_form": {
-      "avg_scored": 3.0,
-      "avg_conceded": 2.0,
-      "total_avg": 5.0,
-      "form_str": "W",
-      "last5_goals": "3 scored in last 1",
-      "n_games": 1,
-      "clean_sheet_pct": 0,
-      "blank_pct": 0,
-      "avg_scored_ht": 2.0,
-      "avg_conceded_ht": 0.0
-    },
-    "home_pos": "17th (0pts)",
-    "away_pos": "6th (3pts)",
-    "h2h": {
-      "n_matches": 1,
-      "avg_goals": 5.0,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 0
-    },
-    "exp_total": 4.07,
-    "exp_home": 1.5,
-    "exp_away": 2.56,
-    "over25": 77,
-    "btts": 72,
-    "correct_scores": [
-      {
-        "score": "1-2",
-        "pct": 8.5
-      },
-      {
-        "score": "1-3",
-        "pct": 7.2
-      },
-      {
-        "score": "1-1",
-        "pct": 6.6
-      },
-      {
-        "score": "2-2",
-        "pct": 6.4
-      },
-      {
-        "score": "0-2",
-        "pct": 5.6
-      }
-    ],
-    "exp_ht_total": 1.82,
-    "over05_ht": 84,
-    "over15_ht": 54
-  },
-  {
-    "league": "Bundesliga",
-    "match": "Bremen vs RB Leipzig",
-    "date": "2026-09-05 13:30 UTC",
-    "home_team": "Bremen",
-    "away_team": "RB Leipzig",
-    "home_form": {
-      "avg_scored": 1.0,
-      "avg_conceded": 4.0,
-      "total_avg": 5.0,
-      "form_str": "L",
-      "last5_goals": "1 scored in last 1",
-      "n_games": 1,
-      "clean_sheet_pct": 0,
-      "blank_pct": 0,
-      "avg_scored_ht": 0.0,
-      "avg_conceded_ht": 2.0
-    },
-    "away_form": {
-      "avg_scored": 3.0,
-      "avg_conceded": 0.0,
-      "total_avg": 3.0,
-      "form_str": "W",
-      "last5_goals": "3 scored in last 1",
-      "n_games": 1,
-      "clean_sheet_pct": 100,
-      "blank_pct": 0,
-      "avg_scored_ht": 1.0,
-      "avg_conceded_ht": 0.0
-    },
-    "home_pos": "16th (0pts)",
-    "away_pos": "3th (3pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 3.0,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 3
-    },
-    "exp_total": 3.98,
-    "exp_home": 1.25,
-    "exp_away": 2.74,
-    "over25": 76,
-    "btts": 67,
-    "correct_scores": [
-      {
-        "score": "1-2",
-        "pct": 8.7
-      },
-      {
-        "score": "1-3",
-        "pct": 7.9
-      },
-      {
-        "score": "0-2",
-        "pct": 7.0
-      },
-      {
-        "score": "0-3",
-        "pct": 6.4
-      },
-      {
-        "score": "1-1",
-        "pct": 6.4
-      }
-    ],
-    "exp_ht_total": 1.82,
-    "over05_ht": 84,
-    "over15_ht": 54
-  },
-  {
-    "league": "Eredivisie",
-    "match": "Willem II vs Excelsior",
-    "date": "2026-09-05 19:00 UTC",
-    "home_team": "Willem II",
-    "away_team": "Excelsior",
-    "home_form": {
-      "avg_scored": 1.33,
-      "avg_conceded": 3.33,
-      "total_avg": 4.7,
-      "form_str": "D-L-L",
-      "last5_goals": "4 scored in last 3",
+      "avg_scored": 0.33,
+      "avg_conceded": 1.33,
+      "total_avg": 1.7,
+      "form_str": "L-L-D",
+      "last5_goals": "1 scored in last 3",
       "n_games": 3,
-      "clean_sheet_pct": 0,
-      "blank_pct": 0,
+      "clean_sheet_pct": 33,
+      "blank_pct": 67,
       "avg_scored_ht": 0.33,
       "avg_conceded_ht": 0.67
     },
     "away_form": {
-      "avg_scored": 2.33,
-      "avg_conceded": 1.0,
-      "total_avg": 3.3,
-      "form_str": "W-L-W",
-      "last5_goals": "7 scored in last 3",
-      "n_games": 3,
-      "clean_sheet_pct": 33,
-      "blank_pct": 0,
-      "avg_scored_ht": 1.33,
-      "avg_conceded_ht": 0.33
-    },
-    "home_pos": "15th (1pts)",
-    "away_pos": "8th (6pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 2.87,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 7
-    },
-    "exp_total": 3.98,
-    "exp_home": 1.2,
-    "exp_away": 2.78,
-    "over25": 76,
-    "btts": 66,
-    "correct_scores": [
-      {
-        "score": "1-2",
-        "pct": 8.7
-      },
-      {
-        "score": "1-3",
-        "pct": 8.0
-      },
-      {
-        "score": "0-2",
-        "pct": 7.2
-      },
-      {
-        "score": "0-3",
-        "pct": 6.7
-      },
-      {
-        "score": "1-1",
-        "pct": 6.2
-      }
-    ],
-    "exp_ht_total": 1.42,
-    "over05_ht": 76,
-    "over15_ht": 42
-  },
-  {
-    "league": "Eredivisie",
-    "match": "NEC vs Feyenoord",
-    "date": "2026-09-05 14:30 UTC",
-    "home_team": "NEC",
-    "away_team": "Feyenoord",
-    "home_form": {
-      "avg_scored": 2.67,
-      "avg_conceded": 1.33,
-      "total_avg": 4.0,
-      "form_str": "W-W-L",
-      "last5_goals": "8 scored in last 3",
-      "n_games": 3,
-      "clean_sheet_pct": 0,
-      "blank_pct": 0,
-      "avg_scored_ht": 1.0,
-      "avg_conceded_ht": 1.0
-    },
-    "away_form": {
-      "avg_scored": 2.5,
-      "avg_conceded": 1.5,
-      "total_avg": 4.0,
-      "form_str": "D-W-D-W",
-      "last5_goals": "10 scored in last 4",
-      "n_games": 4,
-      "clean_sheet_pct": 25,
-      "blank_pct": 0,
-      "avg_scored_ht": 1.75,
-      "avg_conceded_ht": 0.25
-    },
-    "home_pos": "7th (6pts)",
-    "away_pos": "3th (8pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 4.07,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 5
-    },
-    "exp_total": 3.96,
-    "exp_home": 2.03,
-    "exp_away": 1.93,
-    "over25": 76,
-    "btts": 74,
-    "correct_scores": [
-      {
-        "score": "2-1",
-        "pct": 7.6
-      },
-      {
-        "score": "1-1",
-        "pct": 7.5
-      },
-      {
-        "score": "2-2",
-        "pct": 7.3
-      },
-      {
-        "score": "1-2",
-        "pct": 7.2
-      },
-      {
-        "score": "3-1",
-        "pct": 5.1
-      }
-    ],
-    "exp_ht_total": 2.03,
-    "over05_ht": 87,
-    "over15_ht": 60
-  },
-  {
-    "league": "Eredivisie",
-    "match": "Ajax vs PSV",
-    "date": "2026-09-05 18:00 UTC",
-    "home_team": "Ajax",
-    "away_team": "PSV",
-    "home_form": {
-      "avg_scored": 2.67,
+      "avg_scored": 4.0,
       "avg_conceded": 0.67,
-      "total_avg": 3.3,
-      "form_str": "W-D-W",
-      "last5_goals": "8 scored in last 3",
+      "total_avg": 4.7,
+      "form_str": "W-W-W",
+      "last5_goals": "12 scored in last 3",
       "n_games": 3,
       "clean_sheet_pct": 67,
       "blank_pct": 0,
-      "avg_scored_ht": 1.0,
+      "avg_scored_ht": 1.67,
       "avg_conceded_ht": 0.33
     },
-    "away_form": {
-      "avg_scored": 3.75,
-      "avg_conceded": 1.25,
-      "total_avg": 5.0,
-      "form_str": "W-W-W-D",
-      "last5_goals": "15 scored in last 4",
-      "n_games": 4,
-      "clean_sheet_pct": 0,
-      "blank_pct": 0,
-      "avg_scored_ht": 1.5,
-      "avg_conceded_ht": 0.75
-    },
-    "home_pos": "4th (7pts)",
-    "away_pos": "2th (10pts)",
+    "home_pos": "18th (1pts)",
+    "away_pos": "1th (9pts)",
     "h2h": {
       "n_matches": 15,
-      "avg_goals": 3.8,
+      "avg_goals": 4.2,
       "home_wins": 0,
       "away_wins": 0,
-      "draws": 5
+      "draws": 2
     },
-    "exp_total": 3.86,
-    "exp_home": 1.85,
-    "exp_away": 2.01,
-    "over25": 74,
-    "btts": 73,
+    "exp_total": 3.41,
+    "exp_home": 0.67,
+    "exp_away": 2.74,
+    "over25": 66,
+    "btts": 46,
     "correct_scores": [
+      {
+        "score": "0-2",
+        "pct": 12.4
+      },
+      {
+        "score": "0-3",
+        "pct": 11.4
+      },
+      {
+        "score": "0-1",
+        "pct": 9.1
+      },
       {
         "score": "1-2",
-        "pct": 7.9
+        "pct": 8.3
       },
       {
-        "score": "1-1",
+        "score": "0-4",
         "pct": 7.8
-      },
-      {
-        "score": "2-2",
-        "pct": 7.3
-      },
-      {
-        "score": "2-1",
-        "pct": 7.3
-      },
-      {
-        "score": "1-3",
-        "pct": 5.3
       }
     ],
-    "exp_ht_total": 1.72,
-    "over05_ht": 82,
-    "over15_ht": 51
-  },
-  {
-    "league": "Primeira Liga",
-    "match": "Sporting CP vs CD Nacional",
-    "date": "2026-09-05 19:30 UTC",
-    "home_team": "Sporting CP",
-    "away_team": "CD Nacional",
-    "home_form": {
-      "avg_scored": 3.0,
-      "avg_conceded": 1.25,
-      "total_avg": 4.2,
-      "form_str": "W-W-W-D",
-      "last5_goals": "12 scored in last 4",
-      "n_games": 4,
-      "clean_sheet_pct": 25,
-      "blank_pct": 0,
-      "avg_scored_ht": 2.0,
-      "avg_conceded_ht": 0.0
-    },
-    "away_form": {
-      "avg_scored": 1.5,
-      "avg_conceded": 1.5,
-      "total_avg": 3.0,
-      "form_str": "L-L-W-D",
-      "last5_goals": "6 scored in last 4",
-      "n_games": 4,
-      "clean_sheet_pct": 25,
-      "blank_pct": 25,
-      "avg_scored_ht": 0.75,
-      "avg_conceded_ht": 1.0
-    },
-    "home_pos": "2th (10pts)",
-    "away_pos": "10th (4pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 2.87,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 1
-    },
-    "exp_total": 3.7,
-    "exp_home": 2.36,
-    "exp_away": 1.34,
-    "over25": 71,
-    "btts": 67,
-    "correct_scores": [
-      {
-        "score": "2-1",
-        "pct": 9.2
-      },
-      {
-        "score": "1-1",
-        "pct": 7.8
-      },
-      {
-        "score": "3-1",
-        "pct": 7.3
-      },
-      {
-        "score": "2-0",
-        "pct": 6.9
-      },
-      {
-        "score": "2-2",
-        "pct": 6.2
-      }
-    ],
-    "exp_ht_total": 2.16,
-    "over05_ht": 88,
-    "over15_ht": 64
+    "exp_ht_total": 1.55,
+    "over05_ht": 79,
+    "over15_ht": 46
   }
 ]
