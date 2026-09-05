@@ -1,4 +1,4 @@
-import requests, json, os, time, math
+import requests, json, os, time, math, csv
 from datetime import datetime, timedelta
 
 LEAGUES = {
@@ -412,9 +412,43 @@ def make_html(games):
 <body style="background:#121212;color:white;font-family:Arial;padding:12px;max-width:600px;margin:auto">
 <h2 style="text-align:center">⚽ BABOO GOAL IQ v2 — REAL FORM</h2>
 <p style="text-align:center;color:#888;font-size:11px">Real last-5 avg + standings, Poisson-projected · {datetime.now().strftime('%d %b %H:%M')} BST</p>
+<p style="text-align:center;margin-bottom:16px"><a href="goal_iq_predictions.csv" download style="background:#222;border:1px solid #444;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:13px">⬇ Download CSV</a></p>
 {cards if cards else '<p style="text-align:center;color:#888">No scheduled fixtures with usable form data right now — check back once the season is underway.</p>'}
 </body></html>"""
     return html
+
+
+def write_csv(games, path):
+    """Same spirit as the Strike Zone CSV export — one row per fixture,
+    with blank columns for you to fill in the actual result afterward, so
+    this can feed the same kind of tracker you're already building for
+    MLB. Correct-score picks are collapsed into one column (score:pct
+    pairs) rather than five separate columns, to keep this readable in a
+    spreadsheet."""
+    with open(path, 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow([
+            'Date', 'League', 'HomeTeam', 'AwayTeam', 'HomePos', 'AwayPos',
+            'ExpHome', 'ExpAway', 'ExpTotal', 'Over2.5Pct', 'BTTSPct',
+            'ExpHT', 'Over0.5HTPct', 'Over1.5HTPct', 'TopCorrectScores',
+            'H2HMatches', 'H2HAvgGoals',
+            'ActualHomeGoals', 'ActualAwayGoals', 'HitOrMiss',
+        ])
+        for g in games:
+            h2h = g.get('h2h') or {}
+            top_scores = '; '.join(
+                f"{c['score']}:{c['pct']}%" for c in g.get('correct_scores', [])
+            )
+            writer.writerow([
+                g['date'], g['league'], g['home_team'], g['away_team'],
+                g['home_pos'], g['away_pos'],
+                g.get('exp_home', ''), g.get('exp_away', ''), g['exp_total'],
+                g['over25'], g['btts'],
+                g.get('exp_ht_total', ''), g.get('over05_ht', ''), g.get('over15_ht', ''),
+                top_scores,
+                h2h.get('n_matches', ''), h2h.get('avg_goals', ''),
+                '', '', '',  # left blank for you to fill in after the match
+            ])
 
 
 def main():
@@ -431,6 +465,7 @@ def main():
     for p in ['docs/index.html', 'docs/goal_watch.html']:
         with open(p, 'w') as f:
             f.write(html)
+    write_csv(games, 'docs/goal_iq_predictions.csv')
     print(f"Done v2 — {len(games)} real, fully-computed games")
 
 
