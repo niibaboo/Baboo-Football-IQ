@@ -7,6 +7,7 @@ LEAGUES = {
     'PL': {'name': 'Premier League', 'id': 2021},
     'PPL': {'name': 'Primeira Liga', 'id': 2017},
     'PD': {'name': 'La Liga', 'id': 2014},
+    'FL1': {'name': 'Ligue 1', 'id': 2015},
 }
 
 BASE = "https://api.football-data.org/v4"
