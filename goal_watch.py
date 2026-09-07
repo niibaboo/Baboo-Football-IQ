@@ -226,6 +226,7 @@ def predict(h_form, a_form, lg_avg_conceded, lg_avg_scored=None, h2h=None):
     exp_total = round(exp_total, 2)
 
     p_over25 = 1 - poisson_cdf(2, exp_total)
+    p_over45 = 1 - poisson_cdf(4, exp_total)
     p_home_scores = 1 - poisson_pmf(0, exp_home)
     p_away_scores = 1 - poisson_pmf(0, exp_away)
     p_btts = p_home_scores * p_away_scores  # independence assumption — see earlier caveat
@@ -235,6 +236,7 @@ def predict(h_form, a_form, lg_avg_conceded, lg_avg_scored=None, h2h=None):
         'exp_home': round(exp_home, 2),
         'exp_away': round(exp_away, 2),
         'over25': round(p_over25 * 100),
+        'over45': round(p_over45 * 100),
         'btts': round(p_btts * 100),
         'correct_scores': top_correct_scores(exp_home, exp_away),
     }
@@ -260,6 +262,15 @@ def predict(h_form, a_form, lg_avg_conceded, lg_avg_scored=None, h2h=None):
         result['exp_ht_total'] = exp_ht_total
         result['over05_ht'] = round((1 - poisson_cdf(0, exp_ht_total)) * 100)
         result['over15_ht'] = round((1 - poisson_cdf(1, exp_ht_total)) * 100)
+
+        # BTTS FH — same independence-assumption caveat as full-match BTTS,
+        # applied to each side's first-half-only expected goals. Worth
+        # knowing this one compounds two simplifications (independence
+        # AND the halved-league-average proxy for 1H scoring), so treat
+        # it as the least certain number on the card.
+        p_home_scores_ht = 1 - poisson_pmf(0, exp_home_ht)
+        p_away_scores_ht = 1 - poisson_pmf(0, exp_away_ht)
+        result['btts_fh'] = round(p_home_scores_ht * p_away_scores_ht * 100)
 
     return result
 
@@ -381,11 +392,15 @@ def make_html(games, date_label=None, prev_href=None, next_href=None, csv_href="
     for g in games:
         ht_row = ""
         if 'exp_ht_total' in g:
+            btts_fh_block = ""
+            if 'btts_fh' in g:
+                btts_fh_block = f'<div><div style="color:#aaa;font-size:10px">BTTS FH</div><div style="color:#7ec8ff;font-size:15px;font-weight:bold">{g["btts_fh"]}%</div></div>'
             ht_row = f"""
   <div style="display:flex;justify-content:space-between;text-align:center;margin-top:6px">
     <div><div style="color:#aaa;font-size:10px">1H EXP</div><div style="color:#7ec8ff;font-size:15px;font-weight:bold">{g['exp_ht_total']}</div></div>
     <div><div style="color:#aaa;font-size:10px">1H OVER 0.5</div><div style="color:#7ec8ff;font-size:15px;font-weight:bold">{g['over05_ht']}%</div></div>
     <div><div style="color:#aaa;font-size:10px">1H OVER 1.5</div><div style="color:#7ec8ff;font-size:15px;font-weight:bold">{g['over15_ht']}%</div></div>
+    {btts_fh_block}
   </div>"""
 
         h2h_row = ""
@@ -411,6 +426,7 @@ def make_html(games, date_label=None, prev_href=None, next_href=None, csv_href="
   <div style="display:flex;justify-content:space-between;text-align:center;margin:10px 0">
     <div><div style="color:#aaa;font-size:11px">EXP</div><div style="color:#ffeb3b;font-size:20px;font-weight:bold">{g['exp_total']}</div></div>
     <div><div style="color:#aaa;font-size:11px">OVER 2.5</div><div style="color:#ffeb3b;font-size:20px;font-weight:bold">{g['over25']}%</div></div>
+    <div><div style="color:#aaa;font-size:11px">OVER 4.5</div><div style="color:#ffeb3b;font-size:20px;font-weight:bold">{g['over45']}%</div></div>
     <div><div style="color:#aaa;font-size:11px">BTTS</div><div style="color:#ffeb3b;font-size:20px;font-weight:bold">{g['btts']}%</div></div>
   </div>{ht_row}{cs_row}
   <div style="background:#0f0f0f;border-radius:8px;padding:8px;margin-top:10px;display:flex;justify-content:space-between;font-size:11px">
@@ -449,8 +465,8 @@ def write_csv(games, path):
         writer = csv.writer(f)
         writer.writerow([
             'Date', 'League', 'HomeTeam', 'AwayTeam', 'HomePos', 'AwayPos',
-            'ExpHome', 'ExpAway', 'ExpTotal', 'Over2.5Pct', 'BTTSPct',
-            'ExpHT', 'Over0.5HTPct', 'Over1.5HTPct', 'TopCorrectScores',
+            'ExpHome', 'ExpAway', 'ExpTotal', 'Over2.5Pct', 'Over4.5Pct', 'BTTSPct',
+            'ExpHT', 'Over0.5HTPct', 'Over1.5HTPct', 'BTTSFHPct', 'TopCorrectScores',
             'H2HMatches', 'H2HAvgGoals',
             'ActualHomeGoals', 'ActualAwayGoals', 'HitOrMiss',
         ])
@@ -463,8 +479,8 @@ def write_csv(games, path):
                 g['date'], g['league'], g['home_team'], g['away_team'],
                 g['home_pos'], g['away_pos'],
                 g.get('exp_home', ''), g.get('exp_away', ''), g['exp_total'],
-                g['over25'], g['btts'],
-                g.get('exp_ht_total', ''), g.get('over05_ht', ''), g.get('over15_ht', ''),
+                g['over25'], g['over45'], g['btts'],
+                g.get('exp_ht_total', ''), g.get('over05_ht', ''), g.get('over15_ht', ''), g.get('btts_fh', ''),
                 top_scores,
                 h2h.get('n_matches', ''), h2h.get('avg_goals', ''),
                 '', '', '',  # left blank for you to fill in after the match
