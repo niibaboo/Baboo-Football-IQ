@@ -1,5 +1,78 @@
 [
   {
+    "league": "Eredivisie",
+    "match": "NEC vs Excelsior",
+    "date": "2026-09-08 16:45 UTC",
+    "date_key": "2026-09-08",
+    "home_team": "NEC",
+    "away_team": "Excelsior",
+    "home_form": {
+      "avg_scored": 2.25,
+      "avg_conceded": 1.75,
+      "total_avg": 4.0,
+      "form_str": "L-W-W-L",
+      "last5_goals": "9 scored in last 4",
+      "n_games": 4,
+      "clean_sheet_pct": 0,
+      "blank_pct": 0,
+      "avg_scored_ht": 0.75,
+      "avg_conceded_ht": 0.75
+    },
+    "away_form": {
+      "avg_scored": 2.5,
+      "avg_conceded": 0.75,
+      "total_avg": 3.2,
+      "form_str": "W-W-L-W",
+      "last5_goals": "10 scored in last 4",
+      "n_games": 4,
+      "clean_sheet_pct": 50,
+      "blank_pct": 0,
+      "avg_scored_ht": 1.5,
+      "avg_conceded_ht": 0.25
+    },
+    "home_pos": "10th (6pts)",
+    "away_pos": "5th (9pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 3.47,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 2
+    },
+    "exp_total": 3.48,
+    "exp_home": 1.38,
+    "exp_away": 2.11,
+    "over25": 68,
+    "over45": 27,
+    "btts": 66,
+    "correct_scores": [
+      {
+        "score": "1-2",
+        "pct": 9.4
+      },
+      {
+        "score": "1-1",
+        "pct": 8.9
+      },
+      {
+        "score": "0-2",
+        "pct": 6.8
+      },
+      {
+        "score": "1-3",
+        "pct": 6.6
+      },
+      {
+        "score": "0-1",
+        "pct": 6.5
+      }
+    ],
+    "exp_ht_total": 1.58,
+    "over05_ht": 79,
+    "over15_ht": 47,
+    "btts_fh": 26
+  },
+  {
     "league": "Primeira Liga",
     "match": "Moreirense vs SL Benfica",
     "date": "2026-09-09 19:45 UTC",
@@ -73,6 +146,79 @@
     "btts_fh": 21
   },
   {
+    "league": "Eredivisie",
+    "match": "Twente vs Telstar",
+    "date": "2026-09-09 16:45 UTC",
+    "date_key": "2026-09-09",
+    "home_team": "Twente",
+    "away_team": "Telstar",
+    "home_form": {
+      "avg_scored": 2.25,
+      "avg_conceded": 1.25,
+      "total_avg": 3.5,
+      "form_str": "D-W-W-L",
+      "last5_goals": "9 scored in last 4",
+      "n_games": 4,
+      "clean_sheet_pct": 0,
+      "blank_pct": 25,
+      "avg_scored_ht": 1.25,
+      "avg_conceded_ht": 0.75
+    },
+    "away_form": {
+      "avg_scored": 1.25,
+      "avg_conceded": 2.5,
+      "total_avg": 3.8,
+      "form_str": "D-L-L-W",
+      "last5_goals": "5 scored in last 4",
+      "n_games": 4,
+      "clean_sheet_pct": 0,
+      "blank_pct": 25,
+      "avg_scored_ht": 0.5,
+      "avg_conceded_ht": 0.5
+    },
+    "home_pos": "6th (7pts)",
+    "away_pos": "14th (4pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 2.4,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 4
+    },
+    "exp_total": 3.48,
+    "exp_home": 2.31,
+    "exp_away": 1.17,
+    "over25": 68,
+    "over45": 27,
+    "btts": 62,
+    "correct_scores": [
+      {
+        "score": "2-1",
+        "pct": 9.6
+      },
+      {
+        "score": "1-1",
+        "pct": 8.3
+      },
+      {
+        "score": "2-0",
+        "pct": 8.3
+      },
+      {
+        "score": "3-1",
+        "pct": 7.4
+      },
+      {
+        "score": "1-0",
+        "pct": 7.1
+      }
+    ],
+    "exp_ht_total": 1.43,
+    "over05_ht": 76,
+    "over15_ht": 42,
+    "btts_fh": 25
+  },
+  {
     "league": "Primeira Liga",
     "match": "Amadora vs Braga",
     "date": "2026-09-10 19:15 UTC",
@@ -144,6 +290,79 @@
     "over05_ht": 58,
     "over15_ht": 22,
     "btts_fh": 13
+  },
+  {
+    "league": "Eredivisie",
+    "match": "AZ vs Willem II",
+    "date": "2026-09-11 18:00 UTC",
+    "date_key": "2026-09-11",
+    "home_team": "AZ",
+    "away_team": "Willem II",
+    "home_form": {
+      "avg_scored": 3.2,
+      "avg_conceded": 1.0,
+      "total_avg": 4.2,
+      "form_str": "W-W-W-W-W",
+      "last5_goals": "16 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 40,
+      "blank_pct": 0,
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 0.6
+    },
+    "away_form": {
+      "avg_scored": 1.0,
+      "avg_conceded": 3.25,
+      "total_avg": 4.2,
+      "form_str": "L-D-L-L",
+      "last5_goals": "4 scored in last 4",
+      "n_games": 4,
+      "clean_sheet_pct": 0,
+      "blank_pct": 25,
+      "avg_scored_ht": 0.25,
+      "avg_conceded_ht": 1.0
+    },
+    "home_pos": "1th (15pts)",
+    "away_pos": "17th (1pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 3.13,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 3
+    },
+    "exp_total": 4.46,
+    "exp_home": 3.53,
+    "exp_away": 0.94,
+    "over25": 82,
+    "over45": 46,
+    "btts": 59,
+    "correct_scores": [
+      {
+        "score": "3-0",
+        "pct": 8.4
+      },
+      {
+        "score": "3-1",
+        "pct": 7.9
+      },
+      {
+        "score": "4-0",
+        "pct": 7.4
+      },
+      {
+        "score": "2-0",
+        "pct": 7.2
+      },
+      {
+        "score": "4-1",
+        "pct": 7.0
+      }
+    ],
+    "exp_ht_total": 1.31,
+    "over05_ht": 73,
+    "over15_ht": 38,
+    "btts_fh": 21
   },
   {
     "league": "Bundesliga",
