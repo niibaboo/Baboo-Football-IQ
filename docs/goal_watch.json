@@ -1,151 +1,5 @@
 [
   {
-    "league": "La Liga",
-    "match": "M\u00e1laga vs Villarreal",
-    "date": "2026-09-17 19:30 UTC",
-    "date_key": "2026-09-17",
-    "home_team": "M\u00e1laga",
-    "away_team": "Villarreal",
-    "home_form": {
-      "avg_scored": 0.4,
-      "avg_conceded": 1.6,
-      "total_avg": 2.0,
-      "form_str": "D-D-L-D-L",
-      "last5_goals": "2 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 20,
-      "blank_pct": 60,
-      "avg_scored_ht": 0.2,
-      "avg_conceded_ht": 1.0
-    },
-    "away_form": {
-      "avg_scored": 1.4,
-      "avg_conceded": 2.2,
-      "total_avg": 3.6,
-      "form_str": "L-L-L-L-D",
-      "last5_goals": "7 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 0,
-      "blank_pct": 20,
-      "avg_scored_ht": 0.4,
-      "avg_conceded_ht": 0.8
-    },
-    "home_pos": "18th (3pts)",
-    "away_pos": "19th (2pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 2.2,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 4
-    },
-    "exp_total": 2.48,
-    "exp_home": 1.02,
-    "exp_away": 1.46,
-    "over25": 45,
-    "over45": 11,
-    "btts": 49,
-    "correct_scores": [
-      {
-        "score": "1-1",
-        "pct": 12.5
-      },
-      {
-        "score": "0-1",
-        "pct": 12.2
-      },
-      {
-        "score": "1-2",
-        "pct": 9.1
-      },
-      {
-        "score": "0-2",
-        "pct": 8.9
-      },
-      {
-        "score": "1-0",
-        "pct": 8.6
-      }
-    ],
-    "exp_ht_total": 1.05,
-    "over05_ht": 65,
-    "over15_ht": 28,
-    "btts_fh": 16
-  },
-  {
-    "league": "La Liga",
-    "match": "Real Betis vs Getafe",
-    "date": "2026-09-17 17:00 UTC",
-    "date_key": "2026-09-17",
-    "home_team": "Real Betis",
-    "away_team": "Getafe",
-    "home_form": {
-      "avg_scored": 1.8,
-      "avg_conceded": 1.6,
-      "total_avg": 3.4,
-      "form_str": "W-W-W-L-W",
-      "last5_goals": "9 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 40,
-      "blank_pct": 0,
-      "avg_scored_ht": 1.0,
-      "avg_conceded_ht": 1.0
-    },
-    "away_form": {
-      "avg_scored": 0.6,
-      "avg_conceded": 1.2,
-      "total_avg": 1.8,
-      "form_str": "D-D-L-W-L",
-      "last5_goals": "3 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 20,
-      "blank_pct": 40,
-      "avg_scored_ht": 0.2,
-      "avg_conceded_ht": 0.2
-    },
-    "home_pos": "5th (12pts)",
-    "away_pos": "15th (5pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 2.0,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 4
-    },
-    "exp_total": 2.37,
-    "exp_home": 1.43,
-    "exp_away": 0.94,
-    "over25": 42,
-    "over45": 9,
-    "btts": 46,
-    "correct_scores": [
-      {
-        "score": "1-0",
-        "pct": 13.3
-      },
-      {
-        "score": "1-1",
-        "pct": 12.6
-      },
-      {
-        "score": "2-0",
-        "pct": 9.5
-      },
-      {
-        "score": "0-0",
-        "pct": 9.4
-      },
-      {
-        "score": "2-1",
-        "pct": 9.0
-      }
-    ],
-    "exp_ht_total": 0.97,
-    "over05_ht": 62,
-    "over15_ht": 25,
-    "btts_fh": 15
-  },
-  {
     "league": "Bundesliga",
     "match": "Bayern vs Union Berlin",
     "date": "2026-09-18 18:30 UTC",
@@ -404,12 +258,12 @@
       "away_wins": 0,
       "draws": 7
     },
-    "exp_total": 3.39,
-    "exp_home": 2.06,
-    "exp_away": 1.33,
+    "exp_total": 3.41,
+    "exp_home": 2.07,
+    "exp_away": 1.35,
     "over25": 66,
-    "over45": 25,
-    "btts": 64,
+    "over45": 26,
+    "btts": 65,
     "correct_scores": [
       {
         "score": "2-1",
@@ -421,21 +275,21 @@
       },
       {
         "score": "2-0",
-        "pct": 7.2
+        "pct": 7.0
       },
       {
         "score": "1-0",
-        "pct": 6.9
+        "pct": 6.8
       },
       {
         "score": "3-1",
         "pct": 6.5
       }
     ],
-    "exp_ht_total": 1.72,
-    "over05_ht": 82,
-    "over15_ht": 51,
-    "btts_fh": 19
+    "exp_ht_total": 1.76,
+    "over05_ht": 83,
+    "over15_ht": 53,
+    "btts_fh": 20
   },
   {
     "league": "Ligue 1",
@@ -769,20 +623,20 @@
       "away_wins": 0,
       "draws": 3
     },
-    "exp_total": 3.8,
-    "exp_home": 1.62,
-    "exp_away": 2.18,
-    "over25": 73,
-    "over45": 33,
-    "btts": 71,
+    "exp_total": 3.83,
+    "exp_home": 1.64,
+    "exp_away": 2.19,
+    "over25": 74,
+    "over45": 34,
+    "btts": 72,
     "correct_scores": [
       {
         "score": "1-2",
-        "pct": 8.6
+        "pct": 8.5
       },
       {
         "score": "1-1",
-        "pct": 7.9
+        "pct": 7.8
       },
       {
         "score": "2-2",
@@ -797,7 +651,7 @@
         "pct": 6.2
       }
     ],
-    "exp_ht_total": 1.85,
+    "exp_ht_total": 1.86,
     "over05_ht": 84,
     "over15_ht": 55,
     "btts_fh": 33
@@ -1168,6 +1022,79 @@
     "btts_fh": 20
   },
   {
+    "league": "La Liga",
+    "match": "Celta vs Santander",
+    "date": "2026-09-19 16:30 UTC",
+    "date_key": "2026-09-19",
+    "home_team": "Celta",
+    "away_team": "Santander",
+    "home_form": {
+      "avg_scored": 0.6,
+      "avg_conceded": 1.2,
+      "total_avg": 1.8,
+      "form_str": "D-D-D-L-L",
+      "last5_goals": "3 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 20,
+      "blank_pct": 40,
+      "avg_scored_ht": 0.4,
+      "avg_conceded_ht": 0.6
+    },
+    "away_form": {
+      "avg_scored": 1.8,
+      "avg_conceded": 2.8,
+      "total_avg": 4.6,
+      "form_str": "L-W-L-W-L",
+      "last5_goals": "9 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 0,
+      "blank_pct": 20,
+      "avg_scored_ht": 1.4,
+      "avg_conceded_ht": 1.4
+    },
+    "home_pos": "17th (4pts)",
+    "away_pos": "10th (7pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 3.07,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 6
+    },
+    "exp_total": 2.94,
+    "exp_home": 1.46,
+    "exp_away": 1.48,
+    "over25": 56,
+    "over45": 17,
+    "btts": 59,
+    "correct_scores": [
+      {
+        "score": "1-1",
+        "pct": 11.4
+      },
+      {
+        "score": "1-2",
+        "pct": 8.5
+      },
+      {
+        "score": "2-1",
+        "pct": 8.3
+      },
+      {
+        "score": "0-1",
+        "pct": 7.8
+      },
+      {
+        "score": "1-0",
+        "pct": 7.7
+      }
+    ],
+    "exp_ht_total": 1.83,
+    "over05_ht": 84,
+    "over15_ht": 55,
+    "btts_fh": 35
+  },
+  {
     "league": "Ligue 1",
     "match": "Paris FC vs Strasbourg",
     "date": "2026-09-19 15:15 UTC",
@@ -1458,6 +1385,79 @@
     "over05_ht": 76,
     "over15_ht": 42,
     "btts_fh": 26
+  },
+  {
+    "league": "La Liga",
+    "match": "Athletic vs Alav\u00e9s",
+    "date": "2026-09-19 14:15 UTC",
+    "date_key": "2026-09-19",
+    "home_team": "Athletic",
+    "away_team": "Alav\u00e9s",
+    "home_form": {
+      "avg_scored": 1.4,
+      "avg_conceded": 1.2,
+      "total_avg": 2.6,
+      "form_str": "D-W-W-L-L",
+      "last5_goals": "7 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 40,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.4,
+      "avg_conceded_ht": 0.4
+    },
+    "away_form": {
+      "avg_scored": 1.6,
+      "avg_conceded": 1.2,
+      "total_avg": 2.8,
+      "form_str": "L-L-W-W-D",
+      "last5_goals": "8 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 20,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 0.2
+    },
+    "home_pos": "9th (7pts)",
+    "away_pos": "6th (10pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 1.67,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 5
+    },
+    "exp_total": 2.47,
+    "exp_home": 1.19,
+    "exp_away": 1.29,
+    "over25": 45,
+    "over45": 10,
+    "btts": 50,
+    "correct_scores": [
+      {
+        "score": "1-1",
+        "pct": 12.9
+      },
+      {
+        "score": "0-1",
+        "pct": 10.8
+      },
+      {
+        "score": "1-0",
+        "pct": 10.0
+      },
+      {
+        "score": "0-0",
+        "pct": 8.4
+      },
+      {
+        "score": "1-2",
+        "pct": 8.3
+      }
+    ],
+    "exp_ht_total": 0.85,
+    "over05_ht": 57,
+    "over15_ht": 21,
+    "btts_fh": 11
   },
   {
     "league": "Primeira Liga",
