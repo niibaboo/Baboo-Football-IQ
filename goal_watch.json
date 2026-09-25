@@ -1,1 +1,440 @@
-[]
+[
+  {
+    "league": "Eredivisie",
+    "match": "PSV vs Heerenveen",
+    "date": "2026-10-09 18:00 UTC",
+    "date_key": "2026-10-09",
+    "home_team": "PSV",
+    "away_team": "Heerenveen",
+    "home_form": {
+      "avg_scored": 3.2,
+      "avg_conceded": 1.4,
+      "total_avg": 4.6,
+      "form_str": "L-W-D-W-W",
+      "last5_goals": "16 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 0,
+      "blank_pct": 0,
+      "avg_scored_ht": 1.6,
+      "avg_conceded_ht": 1.0
+    },
+    "away_form": {
+      "avg_scored": 1.6,
+      "avg_conceded": 1.4,
+      "total_avg": 3.0,
+      "form_str": "W-D-L-D-L",
+      "last5_goals": "8 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 40,
+      "blank_pct": 40,
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 0.2
+    },
+    "home_pos": "3th (16pts)",
+    "away_pos": "10th (9pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 3.53,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 5
+    },
+    "exp_total": 3.67,
+    "exp_home": 2.25,
+    "exp_away": 1.42,
+    "over25": 71,
+    "over45": 31,
+    "btts": 68,
+    "correct_scores": [
+      {
+        "score": "2-1",
+        "pct": 9.2
+      },
+      {
+        "score": "1-1",
+        "pct": 8.2
+      },
+      {
+        "score": "3-1",
+        "pct": 6.9
+      },
+      {
+        "score": "2-2",
+        "pct": 6.5
+      },
+      {
+        "score": "2-0",
+        "pct": 6.5
+      }
+    ],
+    "exp_ht_total": 1.57,
+    "over05_ht": 79,
+    "over15_ht": 47,
+    "btts_fh": 29
+  },
+  {
+    "league": "Bundesliga",
+    "match": "Dortmund vs Bremen",
+    "date": "2026-10-09 18:30 UTC",
+    "date_key": "2026-10-09",
+    "home_team": "Dortmund",
+    "away_team": "Bremen",
+    "home_form": {
+      "avg_scored": 2.4,
+      "avg_conceded": 0.8,
+      "total_avg": 3.2,
+      "form_str": "W-W-W-W-W",
+      "last5_goals": "12 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 60,
+      "blank_pct": 0,
+      "avg_scored_ht": 0.6,
+      "avg_conceded_ht": 0.2
+    },
+    "away_form": {
+      "avg_scored": 2.0,
+      "avg_conceded": 2.0,
+      "total_avg": 4.0,
+      "form_str": "W-D-W-L",
+      "last5_goals": "8 scored in last 4",
+      "n_games": 4,
+      "clean_sheet_pct": 0,
+      "blank_pct": 0,
+      "avg_scored_ht": 0.25,
+      "avg_conceded_ht": 1.0
+    },
+    "home_pos": "1th (12pts)",
+    "away_pos": "8th (7pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 3.67,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 4
+    },
+    "exp_total": 3.54,
+    "exp_home": 2.29,
+    "exp_away": 1.25,
+    "over25": 69,
+    "over45": 28,
+    "btts": 64,
+    "correct_scores": [
+      {
+        "score": "2-1",
+        "pct": 9.5
+      },
+      {
+        "score": "1-1",
+        "pct": 8.3
+      },
+      {
+        "score": "2-0",
+        "pct": 7.6
+      },
+      {
+        "score": "3-1",
+        "pct": 7.3
+      },
+      {
+        "score": "1-0",
+        "pct": 6.6
+      }
+    ],
+    "exp_ht_total": 1.03,
+    "over05_ht": 64,
+    "over15_ht": 28,
+    "btts_fh": 13
+  },
+  {
+    "league": "Ligue 1",
+    "match": "RC Lens vs Olympique Lyon",
+    "date": "2026-10-09 18:45 UTC",
+    "date_key": "2026-10-09",
+    "home_team": "RC Lens",
+    "away_team": "Olympique Lyon",
+    "home_form": {
+      "avg_scored": 1.4,
+      "avg_conceded": 1.8,
+      "total_avg": 3.2,
+      "form_str": "L-D-W-L-L",
+      "last5_goals": "7 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 0,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.4,
+      "avg_conceded_ht": 0.6
+    },
+    "away_form": {
+      "avg_scored": 2.0,
+      "avg_conceded": 0.4,
+      "total_avg": 2.4,
+      "form_str": "W-D-W-D-W",
+      "last5_goals": "10 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 60,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 0.2
+    },
+    "home_pos": "15th (4pts)",
+    "away_pos": "2th (11pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 2.67,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 3
+    },
+    "exp_total": 2.82,
+    "exp_home": 0.77,
+    "exp_away": 2.06,
+    "over25": 54,
+    "over45": 16,
+    "btts": 47,
+    "correct_scores": [
+      {
+        "score": "0-2",
+        "pct": 12.6
+      },
+      {
+        "score": "0-1",
+        "pct": 12.2
+      },
+      {
+        "score": "1-2",
+        "pct": 9.6
+      },
+      {
+        "score": "1-1",
+        "pct": 9.4
+      },
+      {
+        "score": "0-3",
+        "pct": 8.6
+      }
+    ],
+    "exp_ht_total": 0.98,
+    "over05_ht": 62,
+    "over15_ht": 26,
+    "btts_fh": 12
+  },
+  {
+    "league": "La Liga",
+    "match": "M\u00e1laga vs Espanyol",
+    "date": "2026-10-09 19:00 UTC",
+    "date_key": "2026-10-09",
+    "home_team": "M\u00e1laga",
+    "away_team": "Espanyol",
+    "home_form": {
+      "avg_scored": 0.4,
+      "avg_conceded": 1.8,
+      "total_avg": 2.2,
+      "form_str": "L-L-D-D-L",
+      "last5_goals": "2 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 20,
+      "blank_pct": 60,
+      "avg_scored_ht": 0.2,
+      "avg_conceded_ht": 1.2
+    },
+    "away_form": {
+      "avg_scored": 1.2,
+      "avg_conceded": 1.6,
+      "total_avg": 2.8,
+      "form_str": "L-L-W-D-L",
+      "last5_goals": "6 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 20,
+      "blank_pct": 0,
+      "avg_scored_ht": 0.6,
+      "avg_conceded_ht": 1.0
+    },
+    "home_pos": "20th (3pts)",
+    "away_pos": "15th (7pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 2.33,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 5
+    },
+    "exp_total": 2.32,
+    "exp_home": 0.85,
+    "exp_away": 1.48,
+    "over25": 41,
+    "over45": 9,
+    "btts": 44,
+    "correct_scores": [
+      {
+        "score": "0-1",
+        "pct": 14.5
+      },
+      {
+        "score": "1-1",
+        "pct": 12.2
+      },
+      {
+        "score": "0-2",
+        "pct": 10.7
+      },
+      {
+        "score": "0-0",
+        "pct": 9.8
+      },
+      {
+        "score": "1-2",
+        "pct": 9.0
+      }
+    ],
+    "exp_ht_total": 1.39,
+    "over05_ht": 75,
+    "over15_ht": 40,
+    "btts_fh": 23
+  },
+  {
+    "league": "Primeira Liga",
+    "match": "Braga vs Sporting CP",
+    "date": "2026-10-09 19:15 UTC",
+    "date_key": "2026-10-09",
+    "home_team": "Braga",
+    "away_team": "Sporting CP",
+    "home_form": {
+      "avg_scored": 1.0,
+      "avg_conceded": 0.6,
+      "total_avg": 1.6,
+      "form_str": "D-W-L-W-W",
+      "last5_goals": "5 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 60,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.2,
+      "avg_conceded_ht": 0.4
+    },
+    "away_form": {
+      "avg_scored": 2.4,
+      "avg_conceded": 0.8,
+      "total_avg": 3.2,
+      "form_str": "D-D-W-W-W",
+      "last5_goals": "12 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 40,
+      "blank_pct": 0,
+      "avg_scored_ht": 1.6,
+      "avg_conceded_ht": 0.2
+    },
+    "home_pos": "6th (11pts)",
+    "away_pos": "3th (15pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 2.93,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 5
+    },
+    "exp_total": 2.27,
+    "exp_home": 0.89,
+    "exp_away": 1.38,
+    "over25": 40,
+    "over45": 8,
+    "btts": 44,
+    "correct_scores": [
+      {
+        "score": "0-1",
+        "pct": 14.2
+      },
+      {
+        "score": "1-1",
+        "pct": 12.7
+      },
+      {
+        "score": "0-0",
+        "pct": 10.3
+      },
+      {
+        "score": "0-2",
+        "pct": 9.8
+      },
+      {
+        "score": "1-0",
+        "pct": 9.2
+      }
+    ],
+    "exp_ht_total": 1.16,
+    "over05_ht": 69,
+    "over15_ht": 32,
+    "btts_fh": 12
+  },
+  {
+    "league": "Primeira Liga",
+    "match": "Moreirense vs Gil Vicente",
+    "date": "2026-10-09 17:45 UTC",
+    "date_key": "2026-10-09",
+    "home_team": "Moreirense",
+    "away_team": "Gil Vicente",
+    "home_form": {
+      "avg_scored": 1.2,
+      "avg_conceded": 1.6,
+      "total_avg": 2.8,
+      "form_str": "D-W-L-L-W",
+      "last5_goals": "6 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 20,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 0.4
+    },
+    "away_form": {
+      "avg_scored": 0.8,
+      "avg_conceded": 1.0,
+      "total_avg": 1.8,
+      "form_str": "D-L-L-D-W",
+      "last5_goals": "4 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 40,
+      "blank_pct": 40,
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 0.4
+    },
+    "home_pos": "12th (8pts)",
+    "away_pos": "9th (8pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 2.6,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 3
+    },
+    "exp_total": 2.24,
+    "exp_home": 1.09,
+    "exp_away": 1.15,
+    "over25": 39,
+    "over45": 8,
+    "btts": 45,
+    "correct_scores": [
+      {
+        "score": "1-1",
+        "pct": 13.3
+      },
+      {
+        "score": "0-1",
+        "pct": 12.3
+      },
+      {
+        "score": "1-0",
+        "pct": 11.6
+      },
+      {
+        "score": "0-0",
+        "pct": 10.7
+      },
+      {
+        "score": "1-2",
+        "pct": 7.7
+      }
+    ],
+    "exp_ht_total": 1.14,
+    "over05_ht": 68,
+    "over15_ht": 32,
+    "btts_fh": 19
+  }
+]
