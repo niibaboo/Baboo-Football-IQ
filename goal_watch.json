@@ -1,277 +1,216 @@
 [
   {
     "league": "Champions League",
-    "match": "Man City vs PAE AEK",
-    "date": "2026-10-20 19:00 UTC",
-    "date_key": "2026-10-20",
-    "home_team": "Man City",
-    "away_team": "PAE AEK",
+    "match": "Real Madrid vs RB Leipzig",
+    "date": "2026-10-21 19:00 UTC",
+    "date_key": "2026-10-21",
+    "home_team": "Real Madrid",
+    "away_team": "RB Leipzig",
     "home_form": {
-      "avg_scored": 2.8,
-      "avg_conceded": 1.8,
-      "total_avg": 4.6,
-      "form_str": "W-L-W-W-W",
-      "last5_goals": "14 scored in last 5",
+      "avg_scored": 2.6,
+      "avg_conceded": 1.6,
+      "total_avg": 4.2,
+      "form_str": "W-W-W-L-W",
+      "last5_goals": "13 scored in last 5",
       "n_games": 5,
-      "clean_sheet_pct": 40,
+      "clean_sheet_pct": 20,
       "blank_pct": 0,
       "avg_scored_ht": 1.0,
+      "avg_conceded_ht": 0.2
+    },
+    "away_form": {
+      "avg_scored": 2.6,
+      "avg_conceded": 1.6,
+      "total_avg": 4.2,
+      "form_str": "L-W-W-L-W",
+      "last5_goals": "13 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 60,
+      "blank_pct": 20,
+      "avg_scored_ht": 1.2,
+      "avg_conceded_ht": 0.8
+    },
+    "home_pos": "9th (6pts)",
+    "away_pos": "23th (3pts)",
+    "h2h": {
+      "n_matches": 4,
+      "avg_goals": 2.5,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 1
+    },
+    "exp_total": 3.9,
+    "exp_home": 1.95,
+    "exp_away": 1.95,
+    "over25": 75,
+    "over45": 35,
+    "btts": 74,
+    "correct_scores": [
+      {
+        "score": "1-1",
+        "pct": 7.7
+      },
+      {
+        "score": "1-2",
+        "pct": 7.5
+      },
+      {
+        "score": "2-1",
+        "pct": 7.5
+      },
+      {
+        "score": "2-2",
+        "pct": 7.3
+      },
+      {
+        "score": "1-3",
+        "pct": 4.9
+      }
+    ],
+    "exp_ht_total": 1.44,
+    "over05_ht": 76,
+    "over15_ht": 42,
+    "btts_fh": 25
+  },
+  {
+    "league": "Champions League",
+    "match": "Inter vs Shaktar",
+    "date": "2026-10-21 19:00 UTC",
+    "date_key": "2026-10-21",
+    "home_team": "Inter",
+    "away_team": "Shaktar",
+    "home_form": {
+      "avg_scored": 3.2,
+      "avg_conceded": 2.0,
+      "total_avg": 5.2,
+      "form_str": "W-L-W-D-W",
+      "last5_goals": "16 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 20,
+      "blank_pct": 0,
+      "avg_scored_ht": 1.4,
       "avg_conceded_ht": 1.2
     },
     "away_form": {
-      "avg_scored": 1.0,
-      "avg_conceded": 1.5,
-      "total_avg": 2.5,
-      "form_str": "L-W",
-      "last5_goals": "2 scored in last 2",
+      "avg_scored": 2.0,
+      "avg_conceded": 1.0,
+      "total_avg": 3.0,
+      "form_str": "W-D",
+      "last5_goals": "4 scored in last 2",
       "n_games": 2,
-      "clean_sheet_pct": 50,
+      "clean_sheet_pct": 0,
       "blank_pct": 0,
       "avg_scored_ht": 1.0,
       "avg_conceded_ht": 0.5
     },
-    "home_pos": "17th (3pts)",
-    "away_pos": "20th (3pts)",
-    "h2h": null,
-    "exp_total": 3.75,
-    "exp_home": 2.25,
-    "exp_away": 1.5,
-    "over25": 72,
-    "over45": 32,
-    "btts": 69,
+    "home_pos": "31th (0pts)",
+    "away_pos": "14th (4pts)",
+    "h2h": {
+      "n_matches": 7,
+      "avg_goals": 1.57,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 4
+    },
+    "exp_total": 3.84,
+    "exp_home": 2.01,
+    "exp_away": 1.83,
+    "over25": 74,
+    "over45": 34,
+    "btts": 73,
     "correct_scores": [
       {
         "score": "2-1",
-        "pct": 8.9
+        "pct": 7.9
       },
       {
         "score": "1-1",
-        "pct": 8.0
+        "pct": 7.9
       },
       {
         "score": "2-2",
-        "pct": 6.7
-      },
-      {
-        "score": "3-1",
-        "pct": 6.7
+        "pct": 7.3
       },
       {
         "score": "1-2",
-        "pct": 6.0
+        "pct": 7.3
+      },
+      {
+        "score": "3-1",
+        "pct": 5.3
       }
     ],
-    "exp_ht_total": 1.92,
-    "over05_ht": 85,
-    "over15_ht": 57,
-    "btts_fh": 37
+    "exp_ht_total": 2.13,
+    "over05_ht": 88,
+    "over15_ht": 63,
+    "btts_fh": 43
   },
   {
     "league": "Champions League",
-    "match": "Fenerbah\u00e7e vs Slavia Praha",
-    "date": "2026-10-20 16:45 UTC",
-    "date_key": "2026-10-20",
-    "home_team": "Fenerbah\u00e7e",
-    "away_team": "Slavia Praha",
+    "match": "Lille vs Galatasaray",
+    "date": "2026-10-21 16:45 UTC",
+    "date_key": "2026-10-21",
+    "home_team": "Lille",
+    "away_team": "Galatasaray",
     "home_form": {
-      "avg_scored": 0.5,
-      "avg_conceded": 3.5,
-      "total_avg": 4.0,
-      "form_str": "L-D",
-      "last5_goals": "1 scored in last 2",
-      "n_games": 2,
-      "clean_sheet_pct": 0,
-      "blank_pct": 50,
-      "avg_scored_ht": 0.0,
-      "avg_conceded_ht": 2.0
+      "avg_scored": 1.0,
+      "avg_conceded": 1.2,
+      "total_avg": 2.2,
+      "form_str": "D-L-W-L-W",
+      "last5_goals": "5 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 40,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.4,
+      "avg_conceded_ht": 0.4
     },
     "away_form": {
       "avg_scored": 1.0,
-      "avg_conceded": 2.5,
-      "total_avg": 3.5,
+      "avg_conceded": 3.5,
+      "total_avg": 4.5,
       "form_str": "L-L",
       "last5_goals": "2 scored in last 2",
       "n_games": 2,
       "clean_sheet_pct": 0,
-      "blank_pct": 50,
-      "avg_scored_ht": 0.0,
-      "avg_conceded_ht": 0.0
+      "blank_pct": 0,
+      "avg_scored_ht": 1.0,
+      "avg_conceded_ht": 1.0
     },
-    "home_pos": "28th (1pts)",
-    "away_pos": "31th (0pts)",
-    "h2h": {
-      "n_matches": 3,
-      "avg_goals": 4.33,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 0
-    },
-    "exp_total": 3.74,
-    "exp_home": 1.61,
-    "exp_away": 2.14,
-    "over25": 72,
-    "over45": 32,
-    "btts": 71,
+    "home_pos": "34th (0pts)",
+    "away_pos": "35th (0pts)",
+    "h2h": null,
+    "exp_total": 3.04,
+    "exp_home": 1.81,
+    "exp_away": 1.23,
+    "over25": 59,
+    "over45": 19,
+    "btts": 59,
     "correct_scores": [
       {
-        "score": "1-2",
-        "pct": 8.7
-      },
-      {
         "score": "1-1",
-        "pct": 8.1
-      },
-      {
-        "score": "2-2",
-        "pct": 7.0
+        "pct": 10.6
       },
       {
         "score": "2-1",
-        "pct": 6.5
-      },
-      {
-        "score": "1-3",
-        "pct": 6.2
-      }
-    ],
-    "exp_ht_total": 1.21,
-    "over05_ht": 70,
-    "over15_ht": 34,
-    "btts_fh": 17
-  },
-  {
-    "league": "Champions League",
-    "match": "Sabah FK vs Dortmund",
-    "date": "2026-10-20 16:45 UTC",
-    "date_key": "2026-10-20",
-    "home_team": "Sabah FK",
-    "away_team": "Dortmund",
-    "home_form": {
-      "avg_scored": 1.0,
-      "avg_conceded": 2.0,
-      "total_avg": 3.0,
-      "form_str": "W-L",
-      "last5_goals": "2 scored in last 2",
-      "n_games": 2,
-      "clean_sheet_pct": 50,
-      "blank_pct": 50,
-      "avg_scored_ht": 0.0,
-      "avg_conceded_ht": 1.5
-    },
-    "away_form": {
-      "avg_scored": 1.2,
-      "avg_conceded": 0.6,
-      "total_avg": 1.8,
-      "form_str": "D-L-D-W-W",
-      "last5_goals": "6 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 60,
-      "blank_pct": 40,
-      "avg_scored_ht": 0.2,
-      "avg_conceded_ht": 0.0
-    },
-    "home_pos": "22th (3pts)",
-    "away_pos": "18th (3pts)",
-    "h2h": null,
-    "exp_total": 2.41,
-    "exp_home": 0.9,
-    "exp_away": 1.5,
-    "over25": 43,
-    "over45": 10,
-    "btts": 46,
-    "correct_scores": [
-      {
-        "score": "0-1",
-        "pct": 13.5
-      },
-      {
-        "score": "1-1",
-        "pct": 12.2
-      },
-      {
-        "score": "0-2",
-        "pct": 10.2
-      },
-      {
-        "score": "1-2",
-        "pct": 9.2
-      },
-      {
-        "score": "0-0",
-        "pct": 9.0
-      }
-    ],
-    "exp_ht_total": 0.83,
-    "over05_ht": 56,
-    "over15_ht": 20,
-    "btts_fh": 9
-  },
-  {
-    "league": "Champions League",
-    "match": "Stuttgart vs Atleti",
-    "date": "2026-10-20 19:00 UTC",
-    "date_key": "2026-10-20",
-    "home_team": "Stuttgart",
-    "away_team": "Atleti",
-    "home_form": {
-      "avg_scored": 1.2,
-      "avg_conceded": 0.8,
-      "total_avg": 2.0,
-      "form_str": "L-W-W-L-L",
-      "last5_goals": "6 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 40,
-      "blank_pct": 40,
-      "avg_scored_ht": 0.4,
-      "avg_conceded_ht": 0.2
-    },
-    "away_form": {
-      "avg_scored": 2.2,
-      "avg_conceded": 0.4,
-      "total_avg": 2.6,
-      "form_str": "W-W-W-W-W",
-      "last5_goals": "11 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 60,
-      "blank_pct": 0,
-      "avg_scored_ht": 0.6,
-      "avg_conceded_ht": 0.2
-    },
-    "home_pos": "4th (6pts)",
-    "away_pos": "15th (3pts)",
-    "h2h": null,
-    "exp_total": 2.09,
-    "exp_home": 0.76,
-    "exp_away": 1.33,
-    "over25": 35,
-    "over45": 6,
-    "btts": 39,
-    "correct_scores": [
-      {
-        "score": "0-1",
-        "pct": 16.5
-      },
-      {
-        "score": "1-1",
-        "pct": 12.5
-      },
-      {
-        "score": "0-0",
-        "pct": 12.4
-      },
-      {
-        "score": "0-2",
-        "pct": 11.0
+        "pct": 9.6
       },
       {
         "score": "1-0",
-        "pct": 9.4
+        "pct": 8.7
+      },
+      {
+        "score": "2-0",
+        "pct": 7.8
+      },
+      {
+        "score": "1-2",
+        "pct": 6.5
       }
     ],
-    "exp_ht_total": 0.69,
-    "over05_ht": 50,
-    "over15_ht": 15,
-    "btts_fh": 9
+    "exp_ht_total": 1.27,
+    "over05_ht": 72,
+    "over15_ht": 36,
+    "btts_fh": 22
   },
   {
     "league": "La Liga",
@@ -347,77 +286,71 @@
     "btts_fh": 6
   },
   {
-    "league": "Bundesliga",
-    "match": "Stuttgart vs M'gladbach",
-    "date": "2026-10-23 18:30 UTC",
-    "date_key": "2026-10-23",
-    "home_team": "Stuttgart",
-    "away_team": "M'gladbach",
+    "league": "Champions League",
+    "match": "Como 1907 vs Man United",
+    "date": "2026-10-21 16:45 UTC",
+    "date_key": "2026-10-21",
+    "home_team": "Como 1907",
+    "away_team": "Man United",
     "home_form": {
-      "avg_scored": 1.2,
-      "avg_conceded": 0.8,
-      "total_avg": 2.0,
-      "form_str": "L-W-W-L-L",
-      "last5_goals": "6 scored in last 5",
+      "avg_scored": 1.4,
+      "avg_conceded": 1.4,
+      "total_avg": 2.8,
+      "form_str": "W-L-D-L-W",
+      "last5_goals": "7 scored in last 5",
       "n_games": 5,
-      "clean_sheet_pct": 40,
+      "clean_sheet_pct": 20,
       "blank_pct": 40,
-      "avg_scored_ht": 0.4,
-      "avg_conceded_ht": 0.2
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 0.8
     },
     "away_form": {
-      "avg_scored": 1.6,
-      "avg_conceded": 3.4,
-      "total_avg": 5.0,
-      "form_str": "L-L-L-L-L",
-      "last5_goals": "8 scored in last 5",
+      "avg_scored": 0.6,
+      "avg_conceded": 1.2,
+      "total_avg": 1.8,
+      "form_str": "D-L-D-D-L",
+      "last5_goals": "3 scored in last 5",
       "n_games": 5,
       "clean_sheet_pct": 0,
-      "blank_pct": 20,
-      "avg_scored_ht": 0.8,
-      "avg_conceded_ht": 1.4
+      "blank_pct": 40,
+      "avg_scored_ht": 0.2,
+      "avg_conceded_ht": 0.2
     },
-    "home_pos": "13th (6pts)",
-    "away_pos": "18th (0pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 3.13,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 2
-    },
-    "exp_total": 3.27,
-    "exp_home": 2.19,
-    "exp_away": 1.08,
-    "over25": 63,
-    "over45": 23,
-    "btts": 59,
+    "home_pos": "17th (3pts)",
+    "away_pos": "18th (3pts)",
+    "h2h": null,
+    "exp_total": 2.16,
+    "exp_home": 1.23,
+    "exp_away": 0.93,
+    "over25": 37,
+    "over45": 7,
+    "btts": 43,
     "correct_scores": [
       {
-        "score": "2-1",
-        "pct": 9.8
-      },
-      {
-        "score": "2-0",
-        "pct": 9.1
+        "score": "1-0",
+        "pct": 14.2
       },
       {
         "score": "1-1",
-        "pct": 9.0
+        "pct": 13.2
       },
       {
-        "score": "1-0",
-        "pct": 8.3
+        "score": "0-0",
+        "pct": 11.6
       },
       {
-        "score": "3-1",
-        "pct": 7.2
+        "score": "0-1",
+        "pct": 10.7
+      },
+      {
+        "score": "2-0",
+        "pct": 8.7
       }
     ],
-    "exp_ht_total": 1.23,
-    "over05_ht": 71,
-    "over15_ht": 35,
-    "btts_fh": 19
+    "exp_ht_total": 0.89,
+    "over05_ht": 59,
+    "over15_ht": 22,
+    "btts_fh": 13
   },
   {
     "league": "Eredivisie",
@@ -491,6 +424,79 @@
     "over05_ht": 78,
     "over15_ht": 44,
     "btts_fh": 27
+  },
+  {
+    "league": "Bundesliga",
+    "match": "Stuttgart vs M'gladbach",
+    "date": "2026-10-23 18:30 UTC",
+    "date_key": "2026-10-23",
+    "home_team": "Stuttgart",
+    "away_team": "M'gladbach",
+    "home_form": {
+      "avg_scored": 1.2,
+      "avg_conceded": 0.6,
+      "total_avg": 1.8,
+      "form_str": "D-L-W-W-L",
+      "last5_goals": "6 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 40,
+      "blank_pct": 40,
+      "avg_scored_ht": 0.6,
+      "avg_conceded_ht": 0.0
+    },
+    "away_form": {
+      "avg_scored": 1.6,
+      "avg_conceded": 3.4,
+      "total_avg": 5.0,
+      "form_str": "L-L-L-L-L",
+      "last5_goals": "8 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 0,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 1.4
+    },
+    "home_pos": "13th (6pts)",
+    "away_pos": "18th (0pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 3.13,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 2
+    },
+    "exp_total": 3.18,
+    "exp_home": 2.2,
+    "exp_away": 0.98,
+    "over25": 62,
+    "over45": 22,
+    "btts": 55,
+    "correct_scores": [
+      {
+        "score": "2-0",
+        "pct": 10.1
+      },
+      {
+        "score": "2-1",
+        "pct": 9.9
+      },
+      {
+        "score": "1-0",
+        "pct": 9.2
+      },
+      {
+        "score": "1-1",
+        "pct": 9.0
+      },
+      {
+        "score": "3-0",
+        "pct": 7.4
+      }
+    ],
+    "exp_ht_total": 1.28,
+    "over05_ht": 72,
+    "over15_ht": 37,
+    "btts_fh": 17
   },
   {
     "league": "Ligue 1",
@@ -804,15 +810,15 @@
       "avg_conceded_ht": 0.2
     },
     "away_form": {
-      "avg_scored": 2.8,
-      "avg_conceded": 1.8,
-      "total_avg": 4.6,
-      "form_str": "W-L-W-W-W",
-      "last5_goals": "14 scored in last 5",
+      "avg_scored": 3.6,
+      "avg_conceded": 2.0,
+      "total_avg": 5.6,
+      "form_str": "W-W-L-W-W",
+      "last5_goals": "18 scored in last 5",
       "n_games": 5,
-      "clean_sheet_pct": 40,
+      "clean_sheet_pct": 20,
       "blank_pct": 0,
-      "avg_scored_ht": 1.0,
+      "avg_scored_ht": 1.4,
       "avg_conceded_ht": 1.2
     },
     "home_pos": "12th (8pts)",
@@ -824,38 +830,38 @@
       "away_wins": 0,
       "draws": 1
     },
-    "exp_total": 4.34,
-    "exp_home": 2.39,
-    "exp_away": 1.95,
-    "over25": 81,
-    "over45": 44,
-    "btts": 78,
+    "exp_total": 4.87,
+    "exp_home": 2.53,
+    "exp_away": 2.34,
+    "over25": 86,
+    "over45": 54,
+    "btts": 83,
     "correct_scores": [
       {
-        "score": "2-1",
-        "pct": 7.3
-      },
-      {
         "score": "2-2",
-        "pct": 7.1
+        "pct": 6.7
       },
       {
-        "score": "1-1",
-        "pct": 6.1
+        "score": "2-1",
+        "pct": 5.7
+      },
+      {
+        "score": "3-2",
+        "pct": 5.7
       },
       {
         "score": "1-2",
-        "pct": 5.9
+        "pct": 5.3
       },
       {
-        "score": "3-1",
-        "pct": 5.8
+        "score": "2-3",
+        "pct": 5.2
       }
     ],
-    "exp_ht_total": 1.93,
-    "over05_ht": 85,
-    "over15_ht": 57,
-    "btts_fh": 30
+    "exp_ht_total": 2.07,
+    "over05_ht": 87,
+    "over15_ht": 61,
+    "btts_fh": 36
   },
   {
     "league": "Bundesliga",
@@ -1462,9 +1468,9 @@
     },
     "away_form": {
       "avg_scored": 2.2,
-      "avg_conceded": 1.6,
-      "total_avg": 3.8,
-      "form_str": "L-W-W-W-L",
+      "avg_conceded": 1.4,
+      "total_avg": 3.6,
+      "form_str": "L-L-W-W-W",
       "last5_goals": "11 scored in last 5",
       "n_games": 5,
       "clean_sheet_pct": 0,
@@ -1481,32 +1487,32 @@
       "away_wins": 0,
       "draws": 2
     },
-    "exp_total": 2.93,
-    "exp_home": 1.23,
-    "exp_away": 1.7,
-    "over25": 56,
-    "over45": 17,
-    "btts": 58,
+    "exp_total": 2.84,
+    "exp_home": 1.13,
+    "exp_away": 1.71,
+    "over25": 54,
+    "over45": 16,
+    "btts": 55,
     "correct_scores": [
       {
         "score": "1-1",
-        "pct": 11.1
-      },
-      {
-        "score": "1-2",
-        "pct": 9.5
+        "pct": 11.3
       },
       {
         "score": "0-1",
-        "pct": 9.1
+        "pct": 10.0
+      },
+      {
+        "score": "1-2",
+        "pct": 9.7
       },
       {
         "score": "0-2",
-        "pct": 7.7
+        "pct": 8.5
       },
       {
-        "score": "2-1",
-        "pct": 6.9
+        "score": "1-0",
+        "pct": 6.6
       }
     ],
     "exp_ht_total": 0.96,
