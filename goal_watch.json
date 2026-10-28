@@ -146,6 +146,79 @@
     "btts_fh": 31
   },
   {
+    "league": "Ligue 1",
+    "match": "Nice vs Stade Rennais",
+    "date": "2026-10-30 18:00 UTC",
+    "date_key": "2026-10-30",
+    "home_team": "Nice",
+    "away_team": "Stade Rennais",
+    "home_form": {
+      "avg_scored": 1.4,
+      "avg_conceded": 1.2,
+      "total_avg": 2.6,
+      "form_str": "W-L-W-W-L",
+      "last5_goals": "7 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 0,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.6,
+      "avg_conceded_ht": 0.8
+    },
+    "away_form": {
+      "avg_scored": 2.2,
+      "avg_conceded": 1.8,
+      "total_avg": 4.0,
+      "form_str": "W-L-W-L-W",
+      "last5_goals": "11 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 40,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 1.0
+    },
+    "home_pos": "10th (11pts)",
+    "away_pos": "2th (16pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 2.53,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 3
+    },
+    "exp_total": 3.2,
+    "exp_home": 1.56,
+    "exp_away": 1.64,
+    "over25": 62,
+    "over45": 22,
+    "btts": 64,
+    "correct_scores": [
+      {
+        "score": "1-1",
+        "pct": 10.4
+      },
+      {
+        "score": "1-2",
+        "pct": 8.6
+      },
+      {
+        "score": "2-1",
+        "pct": 8.1
+      },
+      {
+        "score": "0-1",
+        "pct": 6.7
+      },
+      {
+        "score": "2-2",
+        "pct": 6.7
+      }
+    ],
+    "exp_ht_total": 1.61,
+    "over05_ht": 80,
+    "over15_ht": 48,
+    "btts_fh": 30
+  },
+  {
     "league": "Primeira Liga",
     "match": "Casa Pia vs Sporting CP",
     "date": "2026-10-30 20:15 UTC",
@@ -728,79 +801,6 @@
     "over05_ht": 80,
     "over15_ht": 47,
     "btts_fh": 25
-  },
-  {
-    "league": "Ligue 1",
-    "match": "Nice vs Stade Rennais",
-    "date": "2026-10-31 16:15 UTC",
-    "date_key": "2026-10-31",
-    "home_team": "Nice",
-    "away_team": "Stade Rennais",
-    "home_form": {
-      "avg_scored": 1.4,
-      "avg_conceded": 1.2,
-      "total_avg": 2.6,
-      "form_str": "W-L-W-W-L",
-      "last5_goals": "7 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 0,
-      "blank_pct": 20,
-      "avg_scored_ht": 0.6,
-      "avg_conceded_ht": 0.8
-    },
-    "away_form": {
-      "avg_scored": 2.2,
-      "avg_conceded": 1.8,
-      "total_avg": 4.0,
-      "form_str": "W-L-W-L-W",
-      "last5_goals": "11 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 40,
-      "blank_pct": 20,
-      "avg_scored_ht": 0.8,
-      "avg_conceded_ht": 1.0
-    },
-    "home_pos": "10th (11pts)",
-    "away_pos": "2th (16pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 2.53,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 3
-    },
-    "exp_total": 3.2,
-    "exp_home": 1.56,
-    "exp_away": 1.64,
-    "over25": 62,
-    "over45": 22,
-    "btts": 64,
-    "correct_scores": [
-      {
-        "score": "1-1",
-        "pct": 10.4
-      },
-      {
-        "score": "1-2",
-        "pct": 8.6
-      },
-      {
-        "score": "2-1",
-        "pct": 8.1
-      },
-      {
-        "score": "0-1",
-        "pct": 6.7
-      },
-      {
-        "score": "2-2",
-        "pct": 6.7
-      }
-    ],
-    "exp_ht_total": 1.61,
-    "over05_ht": 80,
-    "over15_ht": 48,
-    "btts_fh": 30
   },
   {
     "league": "Premier League",
@@ -1387,79 +1387,6 @@
     "btts_fh": 16
   },
   {
-    "league": "Ligue 1",
-    "match": "Olympique Lyon vs Angers SCO",
-    "date": "2026-10-31 19:45 UTC",
-    "date_key": "2026-10-31",
-    "home_team": "Olympique Lyon",
-    "away_team": "Angers SCO",
-    "home_form": {
-      "avg_scored": 1.4,
-      "avg_conceded": 1.0,
-      "total_avg": 2.4,
-      "form_str": "L-W-L-W-D",
-      "last5_goals": "7 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 40,
-      "blank_pct": 40,
-      "avg_scored_ht": 0.8,
-      "avg_conceded_ht": 0.4
-    },
-    "away_form": {
-      "avg_scored": 1.0,
-      "avg_conceded": 2.0,
-      "total_avg": 3.0,
-      "form_str": "D-L-L-W-D",
-      "last5_goals": "5 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 60,
-      "blank_pct": 40,
-      "avg_scored_ht": 0.4,
-      "avg_conceded_ht": 1.2
-    },
-    "home_pos": "5th (14pts)",
-    "away_pos": "14th (8pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 3.13,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 3
-    },
-    "exp_total": 2.75,
-    "exp_home": 1.79,
-    "exp_away": 0.96,
-    "over25": 52,
-    "over45": 14,
-    "btts": 51,
-    "correct_scores": [
-      {
-        "score": "1-0",
-        "pct": 11.5
-      },
-      {
-        "score": "1-1",
-        "pct": 11.0
-      },
-      {
-        "score": "2-0",
-        "pct": 10.2
-      },
-      {
-        "score": "2-1",
-        "pct": 9.8
-      },
-      {
-        "score": "0-0",
-        "pct": 6.4
-      }
-    ],
-    "exp_ht_total": 1.46,
-    "over05_ht": 77,
-    "over15_ht": 43,
-    "btts_fh": 21
-  },
-  {
     "league": "La Liga",
     "match": "Levante vs Atleti",
     "date": "2026-10-31 13:00 UTC",
@@ -1677,6 +1604,79 @@
     "over05_ht": 68,
     "over15_ht": 32,
     "btts_fh": 13
+  },
+  {
+    "league": "Ligue 1",
+    "match": "Troyes vs Le Mans",
+    "date": "2026-10-31 19:45 UTC",
+    "date_key": "2026-10-31",
+    "home_team": "Troyes",
+    "away_team": "Le Mans",
+    "home_form": {
+      "avg_scored": 0.2,
+      "avg_conceded": 1.8,
+      "total_avg": 2.0,
+      "form_str": "D-L-L-L-L",
+      "last5_goals": "1 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 20,
+      "blank_pct": 80,
+      "avg_scored_ht": 0.2,
+      "avg_conceded_ht": 0.8
+    },
+    "away_form": {
+      "avg_scored": 1.2,
+      "avg_conceded": 2.0,
+      "total_avg": 3.2,
+      "form_str": "D-L-L-W-D",
+      "last5_goals": "6 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 0,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.6,
+      "avg_conceded_ht": 0.4
+    },
+    "home_pos": "17th (5pts)",
+    "away_pos": "15th (7pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 2.73,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 4
+    },
+    "exp_total": 2.37,
+    "exp_home": 0.85,
+    "exp_away": 1.52,
+    "over25": 42,
+    "over45": 9,
+    "btts": 45,
+    "correct_scores": [
+      {
+        "score": "0-1",
+        "pct": 14.2
+      },
+      {
+        "score": "1-1",
+        "pct": 12.1
+      },
+      {
+        "score": "0-2",
+        "pct": 10.8
+      },
+      {
+        "score": "0-0",
+        "pct": 9.3
+      },
+      {
+        "score": "1-2",
+        "pct": 9.2
+      }
+    ],
+    "exp_ht_total": 0.97,
+    "over05_ht": 62,
+    "over15_ht": 25,
+    "btts_fh": 12
   },
   {
     "league": "Primeira Liga",
