@@ -1738,5 +1738,78 @@
     "over05_ht": 76,
     "over15_ht": 42,
     "btts_fh": 25
+  },
+  {
+    "league": "Primeira Liga",
+    "match": "Mar\u00edtimo vs CD Nacional",
+    "date": "2026-11-27 20:15 UTC",
+    "date_key": "2026-11-27",
+    "home_team": "Mar\u00edtimo",
+    "away_team": "CD Nacional",
+    "home_form": {
+      "avg_scored": 0.6,
+      "avg_conceded": 2.6,
+      "total_avg": 3.2,
+      "form_str": "L-L-L-D-L",
+      "last5_goals": "3 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 0,
+      "blank_pct": 40,
+      "avg_scored_ht": 0.2,
+      "avg_conceded_ht": 1.2
+    },
+    "away_form": {
+      "avg_scored": 0.8,
+      "avg_conceded": 1.6,
+      "total_avg": 2.4,
+      "form_str": "W-L-W-L-L",
+      "last5_goals": "4 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 40,
+      "blank_pct": 40,
+      "avg_scored_ht": 0.4,
+      "avg_conceded_ht": 0.8
+    },
+    "home_pos": "15th (8pts)",
+    "away_pos": "13th (10pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 2.53,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 4
+    },
+    "exp_total": 2.57,
+    "exp_home": 0.98,
+    "exp_away": 1.58,
+    "over25": 47,
+    "over45": 12,
+    "btts": 50,
+    "correct_scores": [
+      {
+        "score": "0-1",
+        "pct": 12.2
+      },
+      {
+        "score": "1-1",
+        "pct": 12.0
+      },
+      {
+        "score": "0-2",
+        "pct": 9.6
+      },
+      {
+        "score": "1-2",
+        "pct": 9.5
+      },
+      {
+        "score": "0-0",
+        "pct": 7.7
+      }
+    ],
+    "exp_ht_total": 1.18,
+    "over05_ht": 69,
+    "over15_ht": 33,
+    "btts_fh": 18
   }
 ]
