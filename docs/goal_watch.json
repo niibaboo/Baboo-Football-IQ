@@ -1,151 +1,5 @@
 [
   {
-    "league": "Premier League",
-    "match": "Brentford vs Everton",
-    "date": "2026-11-23 20:00 UTC",
-    "date_key": "2026-11-23",
-    "home_team": "Brentford",
-    "away_team": "Everton",
-    "home_form": {
-      "avg_scored": 1.2,
-      "avg_conceded": 1.4,
-      "total_avg": 2.6,
-      "form_str": "L-W-D-L-D",
-      "last5_goals": "6 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 20,
-      "blank_pct": 20,
-      "avg_scored_ht": 0.6,
-      "avg_conceded_ht": 0.8
-    },
-    "away_form": {
-      "avg_scored": 1.2,
-      "avg_conceded": 1.4,
-      "total_avg": 2.6,
-      "form_str": "W-W-L-L-D",
-      "last5_goals": "6 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 20,
-      "blank_pct": 40,
-      "avg_scored_ht": 0.0,
-      "avg_conceded_ht": 0.2
-    },
-    "home_pos": "10th (14pts)",
-    "away_pos": "7th (16pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 3.07,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 5
-    },
-    "exp_total": 2.64,
-    "exp_home": 1.32,
-    "exp_away": 1.32,
-    "over25": 49,
-    "over45": 13,
-    "btts": 54,
-    "correct_scores": [
-      {
-        "score": "1-1",
-        "pct": 12.4
-      },
-      {
-        "score": "0-1",
-        "pct": 9.4
-      },
-      {
-        "score": "1-0",
-        "pct": 9.4
-      },
-      {
-        "score": "1-2",
-        "pct": 8.2
-      },
-      {
-        "score": "2-1",
-        "pct": 8.2
-      }
-    ],
-    "exp_ht_total": 0.64,
-    "over05_ht": 47,
-    "over15_ht": 14,
-    "btts_fh": 7
-  },
-  {
-    "league": "La Liga",
-    "match": "Levante vs Elche",
-    "date": "2026-11-23 20:00 UTC",
-    "date_key": "2026-11-23",
-    "home_team": "Levante",
-    "away_team": "Elche",
-    "home_form": {
-      "avg_scored": 1.0,
-      "avg_conceded": 1.2,
-      "total_avg": 2.2,
-      "form_str": "D-L-L-W-D",
-      "last5_goals": "5 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 20,
-      "blank_pct": 40,
-      "avg_scored_ht": 0.6,
-      "avg_conceded_ht": 0.6
-    },
-    "away_form": {
-      "avg_scored": 0.6,
-      "avg_conceded": 0.6,
-      "total_avg": 1.2,
-      "form_str": "L-L-W-D-D",
-      "last5_goals": "3 scored in last 5",
-      "n_games": 5,
-      "clean_sheet_pct": 60,
-      "blank_pct": 80,
-      "avg_scored_ht": 0.4,
-      "avg_conceded_ht": 0.0
-    },
-    "home_pos": "18th (11pts)",
-    "away_pos": "19th (10pts)",
-    "h2h": {
-      "n_matches": 15,
-      "avg_goals": 2.27,
-      "home_wins": 0,
-      "away_wins": 0,
-      "draws": 6
-    },
-    "exp_total": 1.66,
-    "exp_home": 0.79,
-    "exp_away": 0.87,
-    "over25": 23,
-    "over45": 3,
-    "btts": 32,
-    "correct_scores": [
-      {
-        "score": "0-0",
-        "pct": 19.0
-      },
-      {
-        "score": "0-1",
-        "pct": 16.5
-      },
-      {
-        "score": "1-0",
-        "pct": 15.0
-      },
-      {
-        "score": "1-1",
-        "pct": 13.1
-      },
-      {
-        "score": "0-2",
-        "pct": 7.2
-      }
-    ],
-    "exp_ht_total": 0.71,
-    "over05_ht": 51,
-    "over15_ht": 16,
-    "btts_fh": 8
-  },
-  {
     "league": "Champions League",
     "match": "Bod\u00f8/Glimt vs LASK",
     "date": "2026-11-24 17:45 UTC",
@@ -655,7 +509,7 @@
       "avg_scored": 1.0,
       "avg_conceded": 1.2,
       "total_avg": 2.2,
-      "form_str": "D-L-L-W-D",
+      "form_str": "D-D-L-L-W",
       "last5_goals": "5 scored in last 5",
       "n_games": 5,
       "clean_sheet_pct": 20,
@@ -675,7 +529,7 @@
       "avg_scored_ht": 0.4,
       "avg_conceded_ht": 1.2
     },
-    "home_pos": "18th (11pts)",
+    "home_pos": "15th (12pts)",
     "away_pos": "7th (17pts)",
     "h2h": {
       "n_matches": 15,
@@ -686,7 +540,7 @@
     },
     "exp_total": 2.56,
     "exp_home": 1.32,
-    "exp_away": 1.24,
+    "exp_away": 1.25,
     "over25": 47,
     "over45": 12,
     "btts": 52,
@@ -705,11 +559,11 @@
       },
       {
         "score": "2-1",
-        "pct": 8.4
+        "pct": 8.3
       },
       {
         "score": "1-2",
-        "pct": 7.8
+        "pct": 7.9
       }
     ],
     "exp_ht_total": 1.37,
@@ -830,9 +684,9 @@
       "away_wins": 0,
       "draws": 3
     },
-    "exp_total": 2.3,
+    "exp_total": 2.29,
     "exp_home": 1.08,
-    "exp_away": 1.22,
+    "exp_away": 1.21,
     "over25": 40,
     "over45": 8,
     "btts": 46,
@@ -843,7 +697,7 @@
       },
       {
         "score": "0-1",
-        "pct": 12.3
+        "pct": 12.2
       },
       {
         "score": "1-0",
@@ -1102,19 +956,19 @@
       "avg_conceded_ht": 1.6
     },
     "away_form": {
-      "avg_scored": 1.2,
-      "avg_conceded": 1.4,
+      "avg_scored": 1.6,
+      "avg_conceded": 1.0,
       "total_avg": 2.6,
-      "form_str": "L-W-D-L-D",
-      "last5_goals": "6 scored in last 5",
+      "form_str": "W-L-W-D-L",
+      "last5_goals": "8 scored in last 5",
       "n_games": 5,
-      "clean_sheet_pct": 20,
+      "clean_sheet_pct": 40,
       "blank_pct": 20,
-      "avg_scored_ht": 0.6,
-      "avg_conceded_ht": 0.8
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 0.6
     },
     "home_pos": "19th (8pts)",
-    "away_pos": "10th (14pts)",
+    "away_pos": "6th (17pts)",
     "h2h": {
       "n_matches": 15,
       "avg_goals": 3.47,
@@ -1122,38 +976,111 @@
       "away_wins": 0,
       "draws": 2
     },
-    "exp_total": 3.59,
-    "exp_home": 1.4,
-    "exp_away": 2.19,
-    "over25": 70,
-    "over45": 29,
-    "btts": 67,
+    "exp_total": 3.74,
+    "exp_home": 1.14,
+    "exp_away": 2.6,
+    "over25": 72,
+    "over45": 32,
+    "btts": 63,
     "correct_scores": [
       {
         "score": "1-2",
-        "pct": 9.3
-      },
-      {
-        "score": "1-1",
-        "pct": 8.5
-      },
-      {
-        "score": "1-3",
-        "pct": 6.8
+        "pct": 9.1
       },
       {
         "score": "0-2",
-        "pct": 6.6
+        "pct": 8.1
+      },
+      {
+        "score": "1-3",
+        "pct": 7.9
+      },
+      {
+        "score": "1-1",
+        "pct": 7.0
+      },
+      {
+        "score": "0-3",
+        "pct": 7.0
+      }
+    ],
+    "exp_ht_total": 1.86,
+    "over05_ht": 84,
+    "over15_ht": 55,
+    "btts_fh": 28
+  },
+  {
+    "league": "Premier League",
+    "match": "Ipswich Town vs Aston Villa",
+    "date": "2026-11-28 17:30 UTC",
+    "date_key": "2026-11-28",
+    "home_team": "Ipswich Town",
+    "away_team": "Aston Villa",
+    "home_form": {
+      "avg_scored": 1.2,
+      "avg_conceded": 2.0,
+      "total_avg": 3.2,
+      "form_str": "L-L-D-D-L",
+      "last5_goals": "6 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 0,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.6,
+      "avg_conceded_ht": 1.0
+    },
+    "away_form": {
+      "avg_scored": 1.4,
+      "avg_conceded": 1.8,
+      "total_avg": 3.2,
+      "form_str": "D-D-L-D-W",
+      "last5_goals": "7 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 20,
+      "blank_pct": 40,
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 0.6
+    },
+    "home_pos": "16th (11pts)",
+    "away_pos": "12th (14pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 2.47,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 4
+    },
+    "exp_total": 3.17,
+    "exp_home": 1.46,
+    "exp_away": 1.72,
+    "over25": 61,
+    "over45": 21,
+    "btts": 63,
+    "correct_scores": [
+      {
+        "score": "1-1",
+        "pct": 10.5
+      },
+      {
+        "score": "1-2",
+        "pct": 9.0
+      },
+      {
+        "score": "2-1",
+        "pct": 7.6
+      },
+      {
+        "score": "0-1",
+        "pct": 7.2
       },
       {
         "score": "2-2",
         "pct": 6.5
       }
     ],
-    "exp_ht_total": 1.73,
-    "over05_ht": 82,
-    "over15_ht": 52,
-    "btts_fh": 30
+    "exp_ht_total": 1.55,
+    "over05_ht": 79,
+    "over15_ht": 46,
+    "btts_fh": 27
   },
   {
     "league": "Ligue 1",
@@ -1343,14 +1270,14 @@
     },
     "exp_total": 2.9,
     "exp_home": 0.98,
-    "exp_away": 1.93,
+    "exp_away": 1.92,
     "over25": 55,
     "over45": 17,
     "btts": 53,
     "correct_scores": [
       {
         "score": "0-1",
-        "pct": 10.6
+        "pct": 10.5
       },
       {
         "score": "1-1",
@@ -1369,7 +1296,7 @@
         "pct": 6.5
       }
     ],
-    "exp_ht_total": 1.43,
+    "exp_ht_total": 1.42,
     "over05_ht": 76,
     "over15_ht": 42,
     "btts_fh": 23
@@ -1478,7 +1405,7 @@
       "avg_scored_ht": 0.8,
       "avg_conceded_ht": 0.6
     },
-    "home_pos": "6th (17pts)",
+    "home_pos": "7th (17pts)",
     "away_pos": "14th (12pts)",
     "h2h": {
       "n_matches": 15,
@@ -1487,20 +1414,20 @@
       "away_wins": 0,
       "draws": 6
     },
-    "exp_total": 2.72,
-    "exp_home": 1.61,
-    "exp_away": 1.11,
-    "over25": 51,
+    "exp_total": 2.74,
+    "exp_home": 1.62,
+    "exp_away": 1.12,
+    "over25": 52,
     "over45": 14,
     "btts": 54,
     "correct_scores": [
       {
         "score": "1-1",
-        "pct": 11.8
+        "pct": 11.7
       },
       {
         "score": "1-0",
-        "pct": 10.6
+        "pct": 10.4
       },
       {
         "score": "2-1",
@@ -1512,10 +1439,10 @@
       },
       {
         "score": "0-1",
-        "pct": 7.3
+        "pct": 7.2
       }
     ],
-    "exp_ht_total": 1.05,
+    "exp_ht_total": 1.04,
     "over05_ht": 65,
     "over15_ht": 28,
     "btts_fh": 15
@@ -1844,7 +1771,7 @@
       "avg_conceded_ht": 0.6
     },
     "home_pos": "4th (27pts)",
-    "away_pos": "15th (12pts)",
+    "away_pos": "16th (12pts)",
     "h2h": {
       "n_matches": 15,
       "avg_goals": 2.53,
@@ -1865,7 +1792,7 @@
       },
       {
         "score": "0-0",
-        "pct": 13.6
+        "pct": 13.5
       },
       {
         "score": "1-1",
@@ -1873,7 +1800,7 @@
       },
       {
         "score": "0-1",
-        "pct": 10.7
+        "pct": 10.6
       },
       {
         "score": "2-0",
@@ -2030,5 +1957,78 @@
     "over05_ht": 37,
     "over15_ht": 8,
     "btts_fh": 4
+  },
+  {
+    "league": "La Liga",
+    "match": "Elche vs Atleti",
+    "date": "2026-11-28 17:30 UTC",
+    "date_key": "2026-11-28",
+    "home_team": "Elche",
+    "away_team": "Atleti",
+    "home_form": {
+      "avg_scored": 0.8,
+      "avg_conceded": 0.8,
+      "total_avg": 1.6,
+      "form_str": "D-L-L-W-D",
+      "last5_goals": "4 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 40,
+      "blank_pct": 60,
+      "avg_scored_ht": 0.4,
+      "avg_conceded_ht": 0.0
+    },
+    "away_form": {
+      "avg_scored": 1.4,
+      "avg_conceded": 0.8,
+      "total_avg": 2.2,
+      "form_str": "W-L-L-W-W",
+      "last5_goals": "7 scored in last 5",
+      "n_games": 5,
+      "clean_sheet_pct": 60,
+      "blank_pct": 20,
+      "avg_scored_ht": 0.8,
+      "avg_conceded_ht": 0.2
+    },
+    "home_pos": "19th (11pts)",
+    "away_pos": "3th (31pts)",
+    "h2h": {
+      "n_matches": 15,
+      "avg_goals": 2.4,
+      "home_wins": 0,
+      "away_wins": 0,
+      "draws": 2
+    },
+    "exp_total": 1.87,
+    "exp_home": 0.79,
+    "exp_away": 1.07,
+    "over25": 29,
+    "over45": 4,
+    "btts": 36,
+    "correct_scores": [
+      {
+        "score": "0-1",
+        "pct": 16.6
+      },
+      {
+        "score": "0-0",
+        "pct": 15.5
+      },
+      {
+        "score": "1-1",
+        "pct": 13.2
+      },
+      {
+        "score": "1-0",
+        "pct": 12.3
+      },
+      {
+        "score": "0-2",
+        "pct": 8.9
+      }
+    ],
+    "exp_ht_total": 0.57,
+    "over05_ht": 43,
+    "over15_ht": 11,
+    "btts_fh": 6
   }
 ]
